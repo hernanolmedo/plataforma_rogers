@@ -377,10 +377,63 @@
             <div class="box-header">
               <h3 class="box-title">Resultado Cuestionario OQ_45.2</h3>
             </div>
-            
+            <div class="box-body">
+              
             <!-- /.box-body -->
-           <h1>Ha completado el test OQ_45.2 correctamente</h1><br> sus resultados son: <br>respuesta total = {{$total}} <br> Sistomatología = {{$sintomatologìa}} = <br> Reacionesinterpersonales = {{ $rel_interpersonales}}  <br> Rol social = {{$rol_social}} <br>
-
+           
+             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente presenta un Indice de Riesgo <span class="badge bg-green">Bajo</span></label>
+             <br>
+             
+           <br>
+           <table class="table table-condensed">
+                <tr>
+                  <th style="width: 10px">#</th>
+                  <th>Evaluación</th>
+                  <th>Nivel</th>
+                  <th style="width: 40px">Valor</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Sistomatología </td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">{{$sintomatologìa}}</span></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Reaciones interpersonales</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">{{ $rel_interpersonales}}</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Rol social</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-light-blue">{{$rol_social}}</span></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td>Respuesta total</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-green">{{$total}}</span></td>
+                </tr>
+              </table>
+           <!-- Final de la tabla -->
            
           </div>
           <!-- /.box -->
