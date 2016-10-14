@@ -381,7 +381,7 @@
               
             <!-- /.box-body -->
            
-             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente presenta un Indice de Riesgo <span class="badge bg-green">Bajo</span></label>
+             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente <span class="badge bg-green">No es de riesgo</span></label>
              <br>
              
            <br>
