@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CrearFormularioOq extends Migration
+class AddTablaTestoq extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,19 @@ class CrearFormularioOq extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('formulario_oq', function (Blueprint $table) {
+        Schema::create('testoq', function (Blueprint $table) {
             $table->increments('id');
-            //son sesiones desde la 0, donde se hace el ingreso, hasta las que sean necesarias. se pueden ordenar por fecha tambien pero si el paciente regresa los numeros deberian volver a contar desde 0
-            $table->integer('numero_sesion');
-            //tiene que haber un campo por pregunta por que los psicologos pueden querer saber que respondio en cada pregunta por separado
+            $table->integer('num_sesion');
+            $table->integer('id_paciente')->unsigned();
+            $table->integer('total');
+            $table->integer('res_sintomatologia');
+            $table->integer('res_relac_inter');
+            $table->integer('res_rol_social');
+            // dejamos default de testOQ en lista_espera, asì solo actualizamos este campo si puntaje da para "en_tratamiento"
+            $table->enum('situacion_actual_pac',['lista_espera','tratamiento', 'evaluacion'])->default('evaluacion');
+            $table->boolean('observacion_riesgo');
+
+
             //*********************
             //    Preguntas
             //*********************
@@ -67,14 +74,10 @@ class CrearFormularioOq extends Migration
             $table->integer('preg_43');
             $table->integer('preg_44');
             $table->integer('preg_45');
-            //**********************
-            //  Fin preguntas
-            //***********************
-            //solo para tomar estadisticas se hace el timestamp
-            $table->timestamp('created_at')->nullable();
-            //se relaciona a un paciente existente; por esto se tiene que crear el paciente primero.
-            $table->foreign('id_paciente')->references('id')->on('pacientes');
-
+            $table->foreign('id_paciente')->references('id')->on('paciente');
+            $table->timestamps();
+           // $table->timestamp('updated_at')->nulleable();
+           // $table->timestamp('created_at')->nullable();
         });
     }
 
@@ -85,6 +88,6 @@ class CrearFormularioOq extends Migration
      */
     public function down()
     {
-        Schema::drop('formulario_oq');
+        Schema::dropIfExists('testoq');
     }
 }

@@ -11,14 +11,23 @@
 |
 */
 
+/// URL::setRootControllerNamespace('App\Http\Controllers');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('formulario.test_oq');
 });
 
-Route::get('test_oq', function () {
-    return view('formularios.test_oq');
-});
 
-Route::get('prueba_admin', function () {
-    return view('index2');
-});
+Route::get('test_oq',[
+	'uses' => 'ControllerTestoq@view',
+	'as' => 'TestoqView'
+  //  return view('formulario.test_oq');
+]);
+
+Route::post('test_oq','ControllerTestoq@obtenerOQ');
+
+//Route::Controller('testTerminado','ControllerTestoq');
+
+//Route::get('prueba_admin', function () {
+//    return view('index2');
+//});
