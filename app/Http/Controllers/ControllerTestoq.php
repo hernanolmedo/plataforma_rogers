@@ -77,13 +77,17 @@ class ControllerTestoq extends Controller
          }
          $form_oq->push();
 
-
-        
-        	$respuesta = ['total' => $form_oq->total,
-        	'sintomatologìa' => $form_oq->res_sintomatologia,
+            $respuesta = ['total' => $form_oq->total,
+        	'sintomatologia' => $form_oq->res_sintomatologia,
         	'rel_interpersonales' => $form_oq->res_relac_inter,
         	'rol_social' => $form_oq->res_rol_social,
-            'observacion_riesgo' => $form_oq->observacion_riesgo];
+            'observacion_riesgo' => $form_oq->observacion_riesgo,
+            'preg_8' => $form_oq->preg_8,
+            'preg_11' => $form_oq->preg_11,
+            'preg_26' => $form_oq->preg_26,
+            'preg_30' => $form_oq->preg_30,
+            'preg_32' => $form_oq->preg_32,
+            'preg_37' => $form_oq->preg_37];
 
         	return response()->view("formulario.testTerminado", $respuesta, 200);
  

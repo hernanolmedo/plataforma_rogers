@@ -381,7 +381,13 @@
               
             <!-- /.box-body -->
            
-             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente <span class="badge bg-green">No es de riesgo</span></label>
+             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente
+               @if($observacion_riesgo == True)
+                  <span class="badge bg-red">Es de riesgo</span>
+                 @else
+                 <span class="badge bg-green">No es de riesgo</span>
+               @endif
+             </label>
              <br>
              
            <br>
@@ -400,7 +406,7 @@
                       <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
                     </div>
                   </td>
-                  <td><span class="badge bg-red">{{$sintomatologìa}}</span></td>
+                  <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
                 </tr>
                 <tr>
                   <td>2.</td>
@@ -433,6 +439,61 @@
                   <td><span class="badge bg-green">{{$total}}</span></td>
                 </tr>
               </table>
+
+              <br>
+              Respuesta preguntas riesgosas:
+              <br>
+              Preg 8 =
+              @if($preg_8 == 4) Casi siempre
+                @elseif($preg_8 == 3) Con frecuencia <br>
+                @elseif($preg_8 == 2) A veces <br>
+                @elseif($preg_8 == 1) Casi Nunca <br>
+                @else Nunca <br>
+              @endif
+
+              Preg 11 =
+              @if($preg_11 == 4) Casi siempre
+                @elseif($preg_11 == 3) Con frecuencia <br>
+                @elseif($preg_11 == 2) A veces <br>
+                @elseif($preg_11 == 1) Casi Nunca <br>
+                @else Nunca <br>
+              @endif
+
+              preg_26 =
+              @if($preg_26 == 4) Casi siempre
+              @elseif($preg_26 == 3) Con frecuencia <br>
+              @elseif($preg_26 == 2) A veces <br>
+              @elseif($preg_26 == 1) Casi Nunca <br>
+              @else Nunca <br>
+              @endif
+
+              preg_30 =
+              @if($preg_30 == 4) Casi siempre <br>
+              @elseif($preg_30 == 3) Con frecuencia <br>
+              @elseif($preg_30 == 2) A veces <br>
+              @elseif($preg_30 == 1) Casi Nunca <br>
+              @else Nunca <br>
+              @endif
+
+              preg_32 =
+              @if($preg_32 == 4) Casi siempre <br>
+              @elseif($preg_32 == 3) Con frecuencia <br>
+              @elseif($preg_32 == 2) A veces <br>
+              @elseif($preg_32 == 1) Casi Nunca <br>
+              @else Nunca <br>
+              @endif
+
+              preg_37 =
+              @if($preg_37 == 4) Nunca<br>
+              @elseif($preg_37 == 3) Casi Nunca <br>
+              @elseif($preg_37 == 2) A veces <br>
+              @elseif($preg_37 == 1) Con frecuencia <br>
+              @else Siempre <br>
+              @endif
+
+
+
+
            <!-- Final de la tabla -->
            
           </div>
