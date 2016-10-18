@@ -393,13 +393,11 @@
            <br>
            <table class="table table-condensed">
                 <tr>
-                  <th style="width: 10px">#</th>
                   <th>Evaluación</th>
                   <th>Nivel</th>
                   <th style="width: 40px">Valor</th>
                 </tr>
                 <tr>
-                  <td>1.</td>
                   <td>Sistomatología </td>
                   <td>
                     <div class="progress progress-xs">
@@ -409,7 +407,6 @@
                   <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
                 </tr>
                 <tr>
-                  <td>2.</td>
                   <td>Reaciones interpersonales</td>
                   <td>
                     <div class="progress progress-xs">
@@ -419,7 +416,6 @@
                   <td><span class="badge bg-yellow">{{ $rel_interpersonales}}</span></td>
                 </tr>
                 <tr>
-                  <td>3.</td>
                   <td>Rol social</td>
                   <td>
                     <div class="progress progress-xs">
@@ -429,7 +425,6 @@
                   <td><span class="badge bg-light-blue">{{$rol_social}}</span></td>
                 </tr>
                 <tr>
-                  <td>4.</td>
                   <td>Respuesta total</td>
                   <td>
                     <div class="progress progress-xs">
@@ -441,59 +436,105 @@
               </table>
 
               <br>
-              Respuesta preguntas riesgosas:
               <br>
-              Preg 8 =
+              
+              <table class="table table-condensed">
+              <tr>
+                <th><label>#</label></th>
+                <th>
+                  <label>Respuesta preguntas riesgosas:</label>
+                </th>
+                <th></th>
+                <th></th>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>¿Pienso en quitarme la vida?</td>
+                <td><label>
               @if($preg_8 == 4) Casi siempre
-                @elseif($preg_8 == 3) Con frecuencia <br>
-                @elseif($preg_8 == 2) A veces <br>
-                @elseif($preg_8 == 1) Casi Nunca <br>
-                @else Nunca <br>
+                @elseif($preg_8 == 3) Con frecuencia 
+                @elseif($preg_8 == 2) A veces 
+                @elseif($preg_8 == 1) Casi Nunca 
+                @else Nunca 
               @endif
+                </label>
+                </td>
+              </tr>
 
-              Preg 11 =
-              @if($preg_11 == 4) Casi siempre
-                @elseif($preg_11 == 3) Con frecuencia <br>
-                @elseif($preg_11 == 2) A veces <br>
-                @elseif($preg_11 == 1) Casi Nunca <br>
-                @else Nunca <br>
-              @endif
+              <tr>
+                <td>11</td>
+                <td>Necesito tomar bebidas alcohólicas en la mañana, después de haber tomado el dia anterior.</td>
+                <td><label>
+                @if($preg_11 == 4) Casi siempre
+                  @elseif($preg_11 == 3) Con frecuencia
+                  @elseif($preg_11 == 2) A veces
+                  @elseif($preg_11 == 1) Casi Nunca
+                  @else Nunca
+                @endif
+                </label></td>
+              </tr>
 
-              preg_26 =
+              <tr>
+                <td>26.</td>
+                <td>Me molesta que me critiquen porque tomo o me drogo.</td>
+                <td><label>
               @if($preg_26 == 4) Casi siempre
-              @elseif($preg_26 == 3) Con frecuencia <br>
-              @elseif($preg_26 == 2) A veces <br>
-              @elseif($preg_26 == 1) Casi Nunca <br>
-              @else Nunca <br>
+              @elseif($preg_26 == 3) Con frecuencia
+              @elseif($preg_26 == 2) A veces 
+              @elseif($preg_26 == 1) Casi Nunca 
+              @else Nunca 
               @endif
+              </label>
+                </td>
+              </tr>
 
-              preg_30 =
-              @if($preg_30 == 4) Casi siempre <br>
-              @elseif($preg_30 == 3) Con frecuencia <br>
-              @elseif($preg_30 == 2) A veces <br>
-              @elseif($preg_30 == 1) Casi Nunca <br>
-              @else Nunca <br>
+              <tr>
+                <td>30.</td>
+                <td>Tengo dificultades para llevarme bien con mis  amigos y conocidos</td>
+                <td><label>
+              @if($preg_30 == 4) Casi siempre 
+              @elseif($preg_30 == 3) Con frecuencia 
+              @elseif($preg_30 == 2) A veces 
+              @elseif($preg_30 == 1) Casi Nunca 
+              @else Nunca 
               @endif
+              </label>
+                </td>
+              </tr>
 
-              preg_32 =
-              @if($preg_32 == 4) Casi siempre <br>
-              @elseif($preg_32 == 3) Con frecuencia <br>
-              @elseif($preg_32 == 2) A veces <br>
-              @elseif($preg_32 == 1) Casi Nunca <br>
-              @else Nunca <br>
+              <tr>
+                <td>32.</td>
+                <td>Tengo problemas en el trabajo/universidad debido a las drogas o el alcohol.</td>
+                <td><label>
+              @if($preg_32 == 4) Casi siempre 
+              @elseif($preg_32 == 3) Con frecuencia 
+              @elseif($preg_32 == 2) A veces 
+              @elseif($preg_32 == 1) Casi Nunca 
+              @else Nunca 
               @endif
+              </label>
+                </td>
+              </tr>
 
-              preg_37 =
-              @if($preg_37 == 4) Nunca<br>
-              @elseif($preg_37 == 3) Casi Nunca <br>
-              @elseif($preg_37 == 2) A veces <br>
-              @elseif($preg_37 == 1) Con frecuencia <br>
-              @else Siempre <br>
+              <tr>
+                <td>37.</td>
+                <td>Me satisfacen mis relaciones con mis seres queridos</td>
+                <td><label>
+              @if($preg_37 == 4) Nunca
+              @elseif($preg_37 == 3) Casi Nunca 
+              @elseif($preg_37 == 2) A veces 
+              @elseif($preg_37 == 1) Con frecuencia 
+              @else Siempre 
               @endif
+              </label>
+                </td>
+              </tr>
 
 
 
 
+              </table>
            <!-- Final de la tabla -->
            
           </div>

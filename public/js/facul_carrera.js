@@ -1,9 +1,4 @@
-/**
- * Created by Fernanda on 17-10-2016.
- */
-
-var FacultadesyCarreras = {
-
+var FacultadesYcarreras = {
     "facultades": [{
         "facultad": "Escuela de Arquitectura",
         "carrera": ["Arquitectura"]
@@ -51,10 +46,10 @@ jQuery(document).ready(function () {
 
     var iFacultad = 0;
     var htmlFacultad = '<option value="sin-Facultad">Seleccione Facultad</option><option value="sin-facultad">--</option>';
-    var htmlCarrera = '<option value="sin-Facultad">Seleccione carrera</option><option value="sin-facultad">--</option>';
+    var htmlCarrera = '<option value="sin-Facultad">Seleccione Facultad</option><option value="sin-facultad">--</option>';
 
-    jQuery.each(FacultadesyCarreras.facultad, function () {
-        htmlFacultad = htmlFacultad + '<option value="' + FacultadesyCarreras.facultades[iFacultad].facultad + '">' + FacultadesyCarreras.facultades[iFacultad].facultad + '</option>';
+    jQuery.each(FacultadesYcarreras.facultades, function () {
+        htmlFacultad = htmlFacultad + '<option value="' + FacultadesYcarreras.facultades[iFacultad].facultad + '">' + FacultadesYcarreras.facultades[iFacultad].facultad + '</option>';
         iFacultad++;
     });
 
@@ -62,31 +57,31 @@ jQuery(document).ready(function () {
     jQuery('#carreras').html(htmlCarrera);
 
     jQuery('#facultades').change(function () {
-        var iFacultad = 0;
-        var valorFacultad = jQuery(this).val();
-        var htmlCarrera = '<option value="sin-carrera">Seleccione carrera</option><option value="sin-carrera">--</option>';
-        jQuery.each(FacultadesyCarreras.facultades, function () {
-            if (FacultadesyCarreras.facultades[iFacultad].facultad == valorFacultad) {
-                var iCarrera = 0;
-                jQuery.each(FacultadesyCarreras.facultades[iCarrera].carrera, function () {
-                    htmlCarrera = htmlCarrera + '<option value="' + FacultadesyCarreras.facultades[iFacultad].carrera[iCarrera] + '">' + FacultadesyCarreras.facultades[iFacultad].carrera[iCarrera] + '</option>';
-                    iCarrera++;
+        var iFacultades = 0;
+        var valorRegion = jQuery(this).val();
+        var htmlComuna = '<option value="sin-carrera">Seleccione Carrera</option><option value="sin-carrera">--</option>';
+        jQuery.each(FacultadesYcarreras.facultades, function () {
+            if (FacultadesYcarreras.facultades[iFacultades].facultad == valorRegion) {
+                var  iCarreras = 0;
+                jQuery.each(FacultadesYcarreras.facultades[iFacultades].carrera, function () {
+                    htmlComuna = htmlComuna + '<option value="' + FacultadesYcarreras.facultades[iFacultades].carrera[iCarreras] + '">' + FacultadesYcarreras.facultades[iFacultades].carrera[iCarreras] + '</option>';
+                     iCarreras++;
                 });
             }
-            iFacultad++;
+            iFacultades++;
         });
-        jQuery('#carreras').html(htmlCarrera);
+        jQuery('#carreras').html(htmlComuna);
     });
     jQuery('#carreras').change(function () {
         if (jQuery(this).val() == 'sin-carrera') {
-            alert('selecciones Facultad');
+            alert('seleccione Facultad');
         } else if (jQuery(this).val() == 'sin-carrera') {
-            alert('selecciones Carrera');
+            alert('seleccione Carrera');
         }
     });
     jQuery('#facultades').change(function () {
-        if (jQuery(this).val() == 'sin-facultad') {
-            alert('selecciones Facultad');
+        if (jQuery(this).val() == 'sin-Facultad') {
+            alert('seleccione Facultad');
         }
     });
 
