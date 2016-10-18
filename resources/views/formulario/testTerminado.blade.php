@@ -398,7 +398,7 @@
                   <th style="width: 40px">Valor</th>
                 </tr>
                 <tr>
-                  <td>Sistomatología </td>
+                  <td>Sintomatología </td>
                   <td>
                     <div class="progress progress-xs">
                       <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
@@ -407,7 +407,7 @@
                   <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
                 </tr>
                 <tr>
-                  <td>Reaciones interpersonales</td>
+                  <td>Relaciones interpersonales</td>
                   <td>
                     <div class="progress progress-xs">
                       <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
@@ -447,91 +447,85 @@
                 <th></th>
                 <th></th>
               </tr>
-
               <tr>
                 <td>8</td>
                 <td>¿Pienso en quitarme la vida?</td>
-                <td><label>
-              @if($preg_8 == 4) Casi siempre
-                @elseif($preg_8 == 3) Con frecuencia 
-                @elseif($preg_8 == 2) A veces 
-                @elseif($preg_8 == 1) Casi Nunca 
-                @else Nunca 
+                <td>
+                 <span class="label
+              @if($preg_8 == 4)
+                label-danger"> Casi siempre </span>
+                @elseif($preg_8 == 3) label-danger"> Con frecuencia </span>
+                @elseif($preg_8 == 2) label-warning"> A veces </span>
+                @elseif($preg_8 == 1) label-success"> Casi Nunca </span>
+                @else label-success"> Nunca </span>
               @endif
-                </label>
                 </td>
               </tr>
 
               <tr>
                 <td>11</td>
                 <td>Necesito tomar bebidas alcohólicas en la mañana, después de haber tomado el dia anterior.</td>
-                <td><label>
-                @if($preg_11 == 4) Casi siempre
-                  @elseif($preg_11 == 3) Con frecuencia
-                  @elseif($preg_11 == 2) A veces
-                  @elseif($preg_11 == 1) Casi Nunca
-                  @else Nunca
+                <td><span class="label
+                @if($preg_11 == 4) label-danger"> Casi siempre </span>
+                  @elseif($preg_11 == 3)label-danger"> Con frecuencia </span>
+                  @elseif($preg_11 == 2) label-warning"> A veces </span>
+                  @elseif($preg_11 == 1) label-success"> Casi Nunca </span>
+                  @else label-success"> Nunca </span>
                 @endif
-                </label></td>
+                </td>
               </tr>
 
               <tr>
                 <td>26.</td>
                 <td>Me molesta que me critiquen porque tomo o me drogo.</td>
-                <td><label>
-              @if($preg_26 == 4) Casi siempre
-              @elseif($preg_26 == 3) Con frecuencia
-              @elseif($preg_26 == 2) A veces 
-              @elseif($preg_26 == 1) Casi Nunca 
-              @else Nunca 
+                <td><span class="label
+              @if($preg_26 == 4) label-danger"> Casi siempre </span>
+              @elseif($preg_26 == 3) label-danger"> Con frecuencia </span>
+              @elseif($preg_26 == 2) label-warning"> A veces </span>
+              @elseif($preg_26 == 1) label-success"> Casi Nunca </span>
+              @else label-success"> Nunca </span>
               @endif
-              </label>
                 </td>
               </tr>
 
               <tr>
                 <td>30.</td>
                 <td>Tengo dificultades para llevarme bien con mis  amigos y conocidos</td>
-                <td><label>
-              @if($preg_30 == 4) Casi siempre 
-              @elseif($preg_30 == 3) Con frecuencia 
-              @elseif($preg_30 == 2) A veces 
-              @elseif($preg_30 == 1) Casi Nunca 
-              @else Nunca 
+                <td><span class="label
+              @if($preg_30 == 4) label-danger"> Casi siempre </span>
+              @elseif($preg_30 == 3) label-danger"> Con frecuencia </span>
+              @elseif($preg_30 == 2) label-warning"> A veces </span>
+              @elseif($preg_30 == 1) label-success"> Casi Nunca </span>
+              @else label-success"> Nunca </span>
               @endif
-              </label>
                 </td>
               </tr>
 
               <tr>
                 <td>32.</td>
                 <td>Tengo problemas en el trabajo/universidad debido a las drogas o el alcohol.</td>
-                <td><label>
-              @if($preg_32 == 4) Casi siempre 
-              @elseif($preg_32 == 3) Con frecuencia 
-              @elseif($preg_32 == 2) A veces 
-              @elseif($preg_32 == 1) Casi Nunca 
-              @else Nunca 
+                <td><span class="label
+              @if($preg_32 == 4) label-danger"> Casi siempre </span>
+              @elseif($preg_32 == 3) label-danger"> Con frecuencia </span>
+              @elseif($preg_32 == 2) label-warning"> A veces </span>
+              @elseif($preg_32 == 1) label-success"> Casi Nunca </span>
+              @else label-success"> Nunca </span>
               @endif
-              </label>
                 </td>
               </tr>
 
               <tr>
                 <td>37.</td>
                 <td>Me satisfacen mis relaciones con mis seres queridos</td>
-                <td><label>
-              @if($preg_37 == 4) Nunca
-              @elseif($preg_37 == 3) Casi Nunca 
-              @elseif($preg_37 == 2) A veces 
-              @elseif($preg_37 == 1) Con frecuencia 
-              @else Siempre 
+                <td><span class="label
+              @if($preg_37 == 4) label-danger"> Nunca </span>
+              @elseif($preg_37 == 3) label-danger"> Casi Nunca </span>
+              @elseif($preg_37 == 2) label-warning"> A veces </span>
+              @elseif($preg_37 == 1) label-success"> Con frecuencia </span>
+              @else label-success"> Casi siempre </span>
               @endif
-              </label>
                 </td>
               </tr>
-
-
 
 
               </table>

@@ -382,28 +382,28 @@
                 {!! csrf_field() !!}
                 <div class="form-group">
                   <label>Nombre completo</label>
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y apellidos..." maxlength="150">
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150">
                 </div>
 
                 <div class="form-group">
-                  <label>RUT</label>
-                  <input type="text" name="rut" class="form-control" placeholder="ejemplo 141136789" maxlength="15">
+                  <label>RUT (sin puntos ni guión)</label>
+                  <input type="text" name="rut" class="form-control" placeholder="Ejemplo: 141136789" maxlength="15" >
                 </div>
 
                 <label>Fecha de nacimiento:</label>
-
                 <div class="input-group date">
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker" name="fecha_nac">
+                  <input type="date" class="form-control pull-right" id="datepicker" step="1" name="fecha_nac" maxlength="10" placeholder="dd/mm/aaaa" min="01/01/1900" max="01/01/2016">
                 </div>
-                
+
                 <br>
                 
                 <div class="form-group">
                 <label>Sexo</label>
                   <select class="form-control" name="sexo">
+                    <option value="sin-sexo" selected>Seleccione sexo</option>
                     <option value="F">Femenino</option>
                     <option value="M">Masculino</option>
                   </select>
@@ -430,8 +430,8 @@
                 <br>
 
                 <div class="form-group">
-                  <label>Nombre completo de Padre, Madre o Tutor</label>
-                  <input type="text" name="nombre_padre_tutor" class="form-control" placeholder="Nombres y apellidos..." maxlength="150">
+                  <label>Nombre completo Padre, Madre o Tutor</label>
+                  <input type="text" name="nombre_padre_tutor" class="form-control" placeholder="Nombres y Apellidos" maxlength="150">
                 </div>
 
                 <br>
@@ -449,6 +449,7 @@
                 <div class="form-group">
                 <label>Sistema Previsional</label>
                   <select class="form-control" name="sistema_previsional">
+                    <option value="sin-sexo" selected>Seleccione Sistema Previsional</option>
                     <option value="NINGUNO">Ninguno</option>
                     <option value="FONASA">Fonasa</option>
                     <option value="ISAPRE">Isapre</option>
@@ -458,11 +459,11 @@
 <!--  SI EL CAMPO ISAPRE ES SELECCIONADO ACTIVAR EL TEXT CUAL (JAVASCRIPT)  -->
                 <div class="form-group">
                   <label>¿Cual?</label>
-                  <input type="text" name="isapre_cual" class="form-control" placeholder="Nombres y apellidos..." maxlength="150">
+                  <input type="text" name="isapre_cual" class="form-control" placeholder="Ejemplo: Consalud" maxlength="150">
                 </div>
 
                 <div class="form-group">
-                <label>Region</label>
+                <label>Región donde vive</label>
                   <select class="form-control" id="regiones">
                   </select>
                 </div>
@@ -570,7 +571,7 @@
 
                         <tr>
                             <td>
-                                Lunes
+                                Miercoles
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="W1" value="W1">
@@ -594,7 +595,7 @@
 
                         <tr>
                             <td>
-                                Lunes
+                                Jueves
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="J1" value="J1">
@@ -618,7 +619,7 @@
 
                         <tr>
                             <td>
-                                Lunes
+                                Viernes
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="V1" value="V1">
@@ -663,8 +664,42 @@
 
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="js/facul_carrera.js"></script>
+                  <label>Año de ingreso</label>
+                  <select class="form-control" id="year" name="ano_ingreso" selected>
+                    <option value="sin-ano_ingreso" selected>Seleccione su año de ingreso</option>
+                    <script>
+                      var myDate = new Date();
+                      var year = myDate.getFullYear();
+                      for(var i = 1950; i < year+1; i++){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                      }
+                    </script>
+                    </select>
 
-        <button type="submit" class="btn btn-info pull-right">Enviar datos</button>
+                  <label>Nivel académico</label>
+                  <select class="form-control"  name="nivel_carrera">
+                    <option value="sin_ano_ingreso" selected>Seleccione su nivel académico</option>
+                    <script>
+                      for(var i = 1; i < 15; i++){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                      }
+                    </script>
+                  </select>
+
+                  <label>Jornada acedémica</label>
+                  <select class="form-control" name="jornada">
+                    <option value="sin_jornada" selected>Seleccione su jornada Académica</option>
+                    <option value="D">Diurno</option>
+                    <option value="V">Vespertino</option>
+                  </select>
+
+                  <label>¿Tiene su matrícula al día?</label>
+                  <select class="form-control" name="jornada">
+                    <option value="sin_matricula" selected>¿matrícula al día?</option>
+                    <option value="T">SI</option>
+                    <option value="F">NO</option>
+                  </select>
+                <button type="submit" class="btn btn-info pull-right">Enviar datos</button>
 
                 </form>              
             <!-- /.box-body -->           
