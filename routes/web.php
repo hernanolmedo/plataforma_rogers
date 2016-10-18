@@ -26,6 +26,10 @@ Route::get('test_oq',[
 
 Route::post('test_oq','ControllerTestoq@obtenerOQ');
 
+Route::get('crear_paciente', function () {
+    return view('creacion.crearPaciente');
+});
+
 //Route::Controller('testTerminado','ControllerTestoq');
 
 //Route::get('prueba_admin', function () {
