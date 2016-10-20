@@ -49,9 +49,8 @@ class PacienteController extends Controller
             $paciente -> fono_padre_tutor = $request->input('fono_padre_tutor', '00000000');
             $paciente -> sistema_previsional = $request->input('sistema_previsional');
 
-            if($paciente->sistema_previsional == "ISAPRE")
-                $paciente->sistema_previsional = $paciente->sistema_previsional.$request->input('isapre_cual');
-
+            if($paciente->sistema_previsional == "ISAPRE") 
+                $paciente->sistema_previsional = $paciente->sistema_previsional . ": " . strtoupper($request->input('isapre_cual'));
             $paciente ->region = $request->input('region');
             $paciente ->comuna = $request->input('comuna');
 
@@ -69,12 +68,11 @@ class PacienteController extends Controller
 
             $paciente -> id_carrera = $carrera_paciente -> id;
             $paciente ->push();
-            echo $paciente->id;
+            dd("Paciente creado exitosamente");
 
         }
         catch(Exception $e){
             echo 'Excepción capturada: ',  $e->getMessage(), "\n";
         }
-        dd($request);
     }
 }
