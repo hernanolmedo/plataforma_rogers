@@ -30,7 +30,6 @@ class AddTablaPaciente extends Migration
             $table->string('sistema_previsional');
             $table->string('region');
             $table->string('comuna');
-            $table->date('fecha_ingreso');
             $table->string('preferencia_horaria');
 
             $table->foreign('id_carrera')->references('id')->on('carrera_paciente');

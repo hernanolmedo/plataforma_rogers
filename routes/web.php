@@ -30,6 +30,8 @@ Route::get('crear_paciente', [
     'uses' => 'PacienteController@viewCrearPaciente',
     'as' => 'CrearPacienteView'
 ]);
+
+Route::post('crear_paciente','PacienteController@guardarPaciente');
 //Route::Controller('testTerminado','ControllerTestoq');
 
 //Route::get('prueba_admin', function () {

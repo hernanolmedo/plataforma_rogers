@@ -382,12 +382,12 @@
                 {!! csrf_field() !!}
                 <div class="form-group">
                   <label>Nombre completo</label>
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150">
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150" required pattern="[A-Z]{0-150}"/>
                 </div>
 
                 <div class="form-group">
                   <label>RUT (sin puntos ni guión)</label>
-                  <input type="text" name="rut" class="form-control" placeholder="Ejemplo: 141136789" maxlength="15" >
+                  <input type="text" name="rut" class="form-control" placeholder="Ejemplo: 141136789" maxlength="15" required pattern="[0-9]{8-9} [0-9][K]{1}">
                 </div>
 
                 <label>Fecha de nacimiento:</label>
@@ -395,7 +395,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="date" class="form-control pull-right" id="datepicker" step="1" name="fecha_nac" maxlength="10" placeholder="dd/mm/aaaa" min="01/01/1900" max="01/01/2016">
+                  <input type="date" class="form-control pull-right" id="datepicker" step="1" name="fecha_nac" maxlength="10" placeholder="dd/mm/aaaa" min="01/01/1900" max="01/01/2016" required>
                 </div>
 
                 <br>
@@ -424,7 +424,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" name="celular" maxlength="10">
+                  <input type="text" class="form-control" name="celular" maxlength="10" required>
                 </div>
 
                 <br>
@@ -464,13 +464,13 @@
 
                 <div class="form-group">
                 <label>Región donde vive</label>
-                  <select class="form-control" id="regiones">
+                  <select class="form-control" id="regiones" name="region">
                   </select>
                 </div>
 
                 <div class="form-group">
                 <label>Comuna</label>
-                  <select class="form-control" id="comunas">
+                  <select class="form-control" id="comunas" name="comuna">
                   </select>
                 </div>
 
@@ -652,13 +652,13 @@
 
                 <div class="form-group">
                 <label>Facultad</label>
-                  <select class="form-control" id="facultades">
+                  <select class="form-control" id="facultades" name="facultad">
                   </select>
                 </div>
 
                 <div class="form-group">
                 <label>Carrera</label>
-                  <select class="form-control" id="carreras">
+                  <select class="form-control" id="carreras" name="carrera">
                   </select>
                 </div>
 
@@ -670,8 +670,9 @@
                     <script>
                       var myDate = new Date();
                       var year = myDate.getFullYear();
-                      for(var i = 1950; i < year+1; i++){
-                        document.write('<option value="'+i+'">'+i+'</option>');
+                      while(year >= 1950){
+                        document.write('<option value="'+year+'">'+year+'</option>');
+                          year--;
                       }
                     </script>
                     </select>
@@ -694,7 +695,7 @@
                   </select>
 
                   <label>¿Tiene su matrícula al día?</label>
-                  <select class="form-control" name="jornada">
+                  <select class="form-control" name="matricula_al_dia">
                     <option value="sin_matricula" selected>¿matrícula al día?</option>
                     <option value="T">SI</option>
                     <option value="F">NO</option>
