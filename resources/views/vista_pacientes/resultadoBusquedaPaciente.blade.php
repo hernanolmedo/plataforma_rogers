@@ -375,164 +375,49 @@
     <section class="content">
 
           <!-- iCheck -->
-          <div class="box box-success">
+          <div class="box box-primary">
             <div class="box-header">
-              <h3 class="box-title">Resultado Cuestionario OQ_45.2</h3>
+              <h3 class="box-title">Pacientes encontrados</h3>
             </div>
             <div class="box-body">
-              
-            <!-- /.box-body -->
-           
-             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente
-               @if($observacion_riesgo == True)
-                  <span class="badge bg-red">Es de riesgo</span>
-                 @else
-                 <span class="badge bg-green">No es de riesgo</span>
-               @endif
-             </label>
-             <br>
-             
-           <br>
-           <table class="table table-condensed">
-                <tr>
-                  <th>Evaluación</th>
-                  <th>Nivel</th>
-                  <th style="width: 40px">Valor</th>
-                </tr>
-                <tr>
-                  <td>Sintomatología </td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
-                </tr>
-                <tr>
-                  <td>Relaciones interpersonales</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-yellow">{{ $rel_interpersonales}}</span></td>
-                </tr>
-                <tr>
-                  <td>Rol social</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-light-blue">{{$rol_social}}</span></td>
-                </tr>
-                <tr>
-                  <td>Respuesta total</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">{{$total}}</span></td>
-                </tr>
-              </table>
+                     <!-- AQUI EMPIEZA EL WIDGET -->
+              <div class="box box-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+               <div class="widget-user-header bg-primary">                
+                  <h5 class="widget-user-username">Carlos Lechuga</h5>
+                  <p> Climatizacion, 20 años, 17.564.984-6, roedor pequeño, mas datos, mas datos</p>
+                  <p>Placeholder de moar datos, mas datos</p>                  
+                </div>
+                <div class="box-footer no-padding">
+                  <ul class="nav nav-stacked">
+                    <li><a href="#">Ver ficha de paciente </a></li>
+                    <li><a href="#">Ver resultados test OQ <span class="pull-right badge bg-green">5 realizados</span></a></li>
+                    <li><a href="#">Agregar Pauta de evaluación</a></li>
+                    <li><a href="#">Placeholder para mas opciones <span class="pull-right badge bg-red">Aqui puede ir numeros o algo</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- TERMINA EL WIDGET -->
 
-              <br>
-              <br>
-              
-              <table class="table table-condensed">
-              <tr>
-                <th><label>#</label></th>
-                <th>
-                  <label>Respuesta preguntas riesgosas:</label>
-                </th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>¿Pienso en quitarme la vida?</td>
-                <td>
-                 <span class="label
-              @if($preg_8 == 4)
-                label-danger"> Casi siempre </span>
-                @elseif($preg_8 == 3) label-danger"> Con frecuencia </span>
-                @elseif($preg_8 == 2) label-warning"> A veces </span>
-                @elseif($preg_8 == 1) label-success"> Casi Nunca </span>
-                @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>11</td>
-                <td>Necesito tomar bebidas alcohólicas en la mañana, después de haber tomado el dia anterior.</td>
-                <td><span class="label
-                @if($preg_11 == 4) label-danger"> Casi siempre </span>
-                  @elseif($preg_11 == 3)label-danger"> Con frecuencia </span>
-                  @elseif($preg_11 == 2) label-warning"> A veces </span>
-                  @elseif($preg_11 == 1) label-success"> Casi Nunca </span>
-                  @else label-success"> Nunca </span>
-                @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>26.</td>
-                <td>Me molesta que me critiquen porque tomo o me drogo.</td>
-                <td><span class="label
-              @if($preg_26 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_26 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_26 == 2) label-warning"> A veces </span>
-              @elseif($preg_26 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>30.</td>
-                <td>Tengo dificultades para llevarme bien con mis  amigos y conocidos</td>
-                <td><span class="label
-              @if($preg_30 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_30 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_30 == 2) label-warning"> A veces </span>
-              @elseif($preg_30 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>32.</td>
-                <td>Tengo problemas en el trabajo/universidad debido a las drogas o el alcohol.</td>
-                <td><span class="label
-              @if($preg_32 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_32 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_32 == 2) label-warning"> A veces </span>
-              @elseif($preg_32 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>37.</td>
-                <td>Me satisfacen mis relaciones con mis seres queridos</td>
-                <td><span class="label
-              @if($preg_37 == 4) label-danger"> Nunca </span>
-              @elseif($preg_37 == 3) label-danger"> Casi Nunca </span>
-              @elseif($preg_37 == 2) label-warning"> A veces </span>
-              @elseif($preg_37 == 1) label-success"> Con frecuencia </span>
-              @else label-success"> Casi siempre </span>
-              @endif
-                </td>
-              </tr>
-
-
-              </table>
-           <!-- Final de la tabla -->
-           
+              <!-- AQUI EMPIEZA EL WIDGET -->
+              <div class="box box-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+               <div class="widget-user-header bg-primary">                
+                  <h5 class="widget-user-username">Cree un segundo usuario</h5>
+                  <p> Para que se vea como se van a presentar</p>
+                  <p>Hay que generar cada una de estas con un for-each de laravel</p>                  
+                </div>
+                <div class="box-footer no-padding">
+                  <ul class="nav nav-stacked">
+                    <li><a href="#">Ver ficha de paciente </a></li>
+                    <li><a href="#">Ver resultados test OQ <span class="pull-right badge bg-green">5 realizados</span></a></li>
+                    <li><a href="#">Agregar Pauta de evaluación</a></li>
+                    <li><a href="#">Placeholder para mas opciones <span class="pull-right badge bg-red">Aqui puede ir numeros o algo</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- TERMINA EL WIDGET -->
+            <!-- /.box-body -->           
           </div>
           <!-- /.box -->
         </div>

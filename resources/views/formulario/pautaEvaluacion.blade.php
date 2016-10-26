@@ -29,6 +29,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+   <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -364,177 +366,535 @@
         Plataforma Rogers
         <small>Usuario Alumno</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Advanced Elements</li>
-      </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
 
           <!-- iCheck -->
-          <div class="box box-success">
+          <div class="box box-primary">
             <div class="box-header">
-              <h3 class="box-title">Resultado Cuestionario OQ_45.2</h3>
+              <h3 class="box-title">Pauta de evaluación</h3>
             </div>
             <div class="box-body">
+              <div class="box-group">
+                <b>Nombre paciente: </b>Carlos Lechuga <br>
+                <b>Rut: </b>17.549.954-8 <br>
+                <b>Fecha de nacimiento: </b>28/02/1996 <br>
+                <b>Matriculado: </b>Si <br>
+                <b>Sistema de salud: </b>Fonasa <br>
+              </div>
+              <br>
+
+              <!-- INICIO FORMULARIO-->
+
+            <form method="post">
+              {!! csrf_field() !!}
+              <!-- INICIO TABLA SINTOMAS -->
+              <table class="table table-bordered">                
+                <tr>
+                  <th>
+                    <label>
+                                          
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      No presenta
+                    </label>
+                  </th>  
+                  <th style="text-align: center;">
+                    <label>
+                      Leve
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      Moderada
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      Grave
+                    </label>
+                  </th>                      
+                </tr>        
+                
+  
+                <tr>
+                  <td>
+                    <label>
+                        Sintomatología ansiosa                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre1" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre1" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre1" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre1" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+                
+                <tr>
+                  <td>
+                    <label>
+                        Sintomatología depresiva                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre2" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre2" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre2" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre2" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Ideación/intengo suicida                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre3" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre3" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre3" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre3" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Trastorno alimentario                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre4" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre4" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre4" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre4" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Problemas identidad y autoestima                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre5" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre5" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre5" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre5" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Problemas académicos                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre6" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre6" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre6" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre6" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Problemas familiares                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre7" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre7" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre7" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre7" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Problemas de pareja                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre8" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre8" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre8" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre8" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Problemas interpersonales                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre9" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre9" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre9" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre9" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Duelo                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre10" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre10" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre10" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre10" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Abuso sexual                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre11" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre11" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre11" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre11" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+
+                <tr>
+                  <td>
+                    <label>
+                        Otro                
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre12" class="square center" value="0">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre12" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre12" class="square" value="2">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="pre12" class="square" value="3" required>
+                    </label>
+                  </td>             
+                </tr>
+              </table>
+              <!-- FINAL DE LA TABLA DE SINTOMAS-->
+
+              <!-- MOTIVO DE CONSULTA-->
+              <div class="form-group">
+                  <label>Motivo de consulta</label>
+                  <textarea class="form-control" rows="3" placeholder="Especificaciones breves ..."></textarea>
+              </div>
+              <!-- FIN MOTIVO DE CONSULTA-->
+              <!-- INICIO INDICACIONES DE TRATAMIENTO-->
+              <label> Indicaciones</label>
+              <table class="table table-bordered">                
+                <tr>
+                  <th>
+                    <label>
+                         Psicoterapia individual inmediata (Urgentes)                 
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      Psicoterapia Individual A
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      Psicoterapia Individual B
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      No requiere psicoterapia
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>
+                      Derivación a Psiquiatría
+                    </label>
+                  </th>                        
+                </tr>        
+                
+  
+                <tr>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="psicoterapia" class="square center" value="1">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="psicoterapia" class="square center" value="2">
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="psicoterapia" class="square" value="3">                   
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="psicoterapia" class="square" value="4" required>
+                    </label>
+                  </td>
+                  <td  style="text-align: center;">
+                    <label class="radio-inline">
+                      <input type="radio" name="psicoterapia" class="square" value="5" required>
+                    </label>
+                  </td>            
+                </tr>
+              </table>
+              <table class="table table-bordered">                
+                <tr>
+                  <th>
+                    <label>
+                         SE SUGIERE               
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>TERAPIA GRUPAL </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="se_sugiere" class="square center" value="1">
+                    </label>
+                  </th>
+                  <th style="text-align: center;">
+                    <label>COACHING </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="se_sugiere" class="square center" value="2">
+                    </label>
+                  </th>                                       
+                </tr> 
+              </table>
+
+              <!-- FIN INDICACIONES DE TRATAMIENTO-->
+              <!-- INICIO OBSERVACIONES Y COMENTARIOS-->
+              <div class="box box-success">
+                <div class="box-header">
+                  <h3 class="box-title">Observaciones
+                  </h3>
+                  <!-- tools box -->
+                  <div class="pull-right box-tools">
+                    <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fa fa-minus"></i></button>
+                  </div>
+                  <!-- /. tools -->
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body pad">
               
+                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              
+                </div>
+              </div>
+
+              <div class="box box-success">
+                <div class="box-header">
+                  <h3 class="box-title">Comentarios
+                  </h3>
+                  <!-- tools box -->
+                  <div class="pull-right box-tools">
+                    <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                      <i class="fa fa-minus"></i></button>
+                  </div>
+                  <!-- /. tools -->
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body pad">
+              
+                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              
+                </div>
+              </div>
+            </form>                           
+
             <!-- /.box-body -->
-           
-             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente
-               @if($observacion_riesgo == True)
-                  <span class="badge bg-red">Es de riesgo</span>
-                 @else
-                 <span class="badge bg-green">No es de riesgo</span>
-               @endif
-             </label>
-             <br>
-             
-           <br>
-           <table class="table table-condensed">
-                <tr>
-                  <th>Evaluación</th>
-                  <th>Nivel</th>
-                  <th style="width: 40px">Valor</th>
-                </tr>
-                <tr>
-                  <td>Sintomatología </td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
-                </tr>
-                <tr>
-                  <td>Relaciones interpersonales</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-yellow">{{ $rel_interpersonales}}</span></td>
-                </tr>
-                <tr>
-                  <td>Rol social</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-light-blue">{{$rol_social}}</span></td>
-                </tr>
-                <tr>
-                  <td>Respuesta total</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">{{$total}}</span></td>
-                </tr>
-              </table>
-
-              <br>
-              <br>
-              
-              <table class="table table-condensed">
-              <tr>
-                <th><label>#</label></th>
-                <th>
-                  <label>Respuesta preguntas riesgosas:</label>
-                </th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>¿Pienso en quitarme la vida?</td>
-                <td>
-                 <span class="label
-              @if($preg_8 == 4)
-                label-danger"> Casi siempre </span>
-                @elseif($preg_8 == 3) label-danger"> Con frecuencia </span>
-                @elseif($preg_8 == 2) label-warning"> A veces </span>
-                @elseif($preg_8 == 1) label-success"> Casi Nunca </span>
-                @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>11</td>
-                <td>Necesito tomar bebidas alcohólicas en la mañana, después de haber tomado el dia anterior.</td>
-                <td><span class="label
-                @if($preg_11 == 4) label-danger"> Casi siempre </span>
-                  @elseif($preg_11 == 3)label-danger"> Con frecuencia </span>
-                  @elseif($preg_11 == 2) label-warning"> A veces </span>
-                  @elseif($preg_11 == 1) label-success"> Casi Nunca </span>
-                  @else label-success"> Nunca </span>
-                @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>26.</td>
-                <td>Me molesta que me critiquen porque tomo o me drogo.</td>
-                <td><span class="label
-              @if($preg_26 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_26 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_26 == 2) label-warning"> A veces </span>
-              @elseif($preg_26 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>30.</td>
-                <td>Tengo dificultades para llevarme bien con mis  amigos y conocidos</td>
-                <td><span class="label
-              @if($preg_30 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_30 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_30 == 2) label-warning"> A veces </span>
-              @elseif($preg_30 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>32.</td>
-                <td>Tengo problemas en el trabajo/universidad debido a las drogas o el alcohol.</td>
-                <td><span class="label
-              @if($preg_32 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_32 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_32 == 2) label-warning"> A veces </span>
-              @elseif($preg_32 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>37.</td>
-                <td>Me satisfacen mis relaciones con mis seres queridos</td>
-                <td><span class="label
-              @if($preg_37 == 4) label-danger"> Nunca </span>
-              @elseif($preg_37 == 3) label-danger"> Casi Nunca </span>
-              @elseif($preg_37 == 2) label-warning"> A veces </span>
-              @elseif($preg_37 == 1) label-success"> Con frecuencia </span>
-              @else label-success"> Casi siempre </span>
-              @endif
-                </td>
-              </tr>
-
-
-              </table>
-           <!-- Final de la tabla -->
-           
+            <div class="box-footer">
+              <button type="submit" class="btn btn-success">Enviar Evaluación</button>
+            </div>           
           </div>
           <!-- /.box -->
+
         </div>
         <!-- /.col (right) -->
       </div>
@@ -777,7 +1137,11 @@
 <script src="dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- CK Editor -->
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
 <!-- Page script -->
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <script>
   $(function () {
     //Initialize Select2 Elements
@@ -820,8 +1184,8 @@
 
     //iCheck for checkbox and radio inputs
     $('input[type="checkbox"].square, input[type="radio"].square').iCheck({
-      checkboxClass: 'icheckbox_square-gree',
-      radioClass: 'iradio_square-green'
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass: 'iradio_square-blue'
     });
     //Red color scheme for iCheck
     $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
@@ -844,6 +1208,10 @@
 
       showInputs: false
     });
+
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea").wysihtml5();
+
   });
 </script>
 </body>

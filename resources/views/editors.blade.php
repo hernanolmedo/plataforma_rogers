@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Rogers - Plataforma de Psicología Usach</title>
+  <title>AdminLTE 2 | Editors</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -12,23 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
-  <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="plugins/iCheck/all.css">
-  <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css">
-  <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="plugins/select2/select2.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,9 +34,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>R</b>P</span>
+      <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Rogers</b> Psicologia</span>
+      <span class="logo-lg"><b>Admin</b>LTE</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -164,7 +154,6 @@
                       <i class="fa fa-users text-red"></i> 5 new members joined
                     </a>
                   </li>
-
                   <li>
                     <a href="#">
                       <i class="fa fa-shopping-cart text-green"></i> 25 sales made
@@ -258,7 +247,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Omar Matus</span>
+              <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -310,20 +299,18 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
-      <img src="dist/img/logo-usach.png" class="center-block" style="width:100px;height:150px;">
-          <br>  
         <div class="pull-left image">
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Omar Matus</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> En linea</a>
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
       <!-- search form -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Rut o nombre paciente...">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
               <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -333,24 +320,175 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header">Menu Principal</li>
+        <li class="header">MAIN NAVIGATION</li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-pencil fa-fw"></i> <span>Test OQ</span>
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-        </li>  
+          <ul class="treeview-menu">
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+          </ul>
+        </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-table"></i> <span>Estadisticas</span>
+            <i class="fa fa-files-o"></i>
+            <span>Layout Options</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <span class="label label-primary pull-right">4</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../widgets.html">
+            <i class="fa fa-th"></i> <span>Widgets</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
             </span>
           </a>
         </li>
-        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Charts</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>UI Elements</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Forms</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li class="active"><a href="editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>Tables</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../calendar.html">
+            <i class="fa fa-calendar"></i> <span>Calendar</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-red">3</small>
+              <small class="label pull-right bg-blue">17</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="../mailbox/mailbox.html">
+            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-yellow">12</small>
+              <small class="label pull-right bg-green">16</small>
+              <small class="label pull-right bg-red">5</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Examples</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>Multilevel</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+            <li>
+              <a href="#"><i class="fa fa-circle-o"></i> Level One
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i> Level Two
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+          </ul>
+        </li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li class="header">LABELS</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -361,185 +499,70 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Plataforma Rogers
-        <small>Usuario Alumno</small>
+        Text Editors
+        <small>Advanced form element</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Forms</a></li>
-        <li class="active">Advanced Elements</li>
+        <li class="active">Editors</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-
-          <!-- iCheck -->
-          <div class="box box-success">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-info">
             <div class="box-header">
-              <h3 class="box-title">Resultado Cuestionario OQ_45.2</h3>
+              <h3 class="box-title">CK Editor
+                <small>Advanced and full of features</small>
+              </h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                  <i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+                  <i class="fa fa-times"></i></button>
+              </div>
+              <!-- /. tools -->
             </div>
-            <div class="box-body">
-              
-            <!-- /.box-body -->
-           
-             <label>El cuestionario fue respondido exitosamente, los resultados se presentan en la siguiente tabla. Tomar en consideración que el paciente
-               @if($observacion_riesgo == True)
-                  <span class="badge bg-red">Es de riesgo</span>
-                 @else
-                 <span class="badge bg-green">No es de riesgo</span>
-               @endif
-             </label>
-             <br>
-             
-           <br>
-           <table class="table table-condensed">
-                <tr>
-                  <th>Evaluación</th>
-                  <th>Nivel</th>
-                  <th style="width: 40px">Valor</th>
-                </tr>
-                <tr>
-                  <td>Sintomatología </td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-red">{{$sintomatologia}}</span></td>
-                </tr>
-                <tr>
-                  <td>Relaciones interpersonales</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-yellow">{{ $rel_interpersonales}}</span></td>
-                </tr>
-                <tr>
-                  <td>Rol social</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-light-blue">{{$rol_social}}</span></td>
-                </tr>
-                <tr>
-                  <td>Respuesta total</td>
-                  <td>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar progress-bar-success" style="width: 90%"></div>
-                    </div>
-                  </td>
-                  <td><span class="badge bg-green">{{$total}}</span></td>
-                </tr>
-              </table>
-
-              <br>
-              <br>
-              
-              <table class="table table-condensed">
-              <tr>
-                <th><label>#</label></th>
-                <th>
-                  <label>Respuesta preguntas riesgosas:</label>
-                </th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>¿Pienso en quitarme la vida?</td>
-                <td>
-                 <span class="label
-              @if($preg_8 == 4)
-                label-danger"> Casi siempre </span>
-                @elseif($preg_8 == 3) label-danger"> Con frecuencia </span>
-                @elseif($preg_8 == 2) label-warning"> A veces </span>
-                @elseif($preg_8 == 1) label-success"> Casi Nunca </span>
-                @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>11</td>
-                <td>Necesito tomar bebidas alcohólicas en la mañana, después de haber tomado el dia anterior.</td>
-                <td><span class="label
-                @if($preg_11 == 4) label-danger"> Casi siempre </span>
-                  @elseif($preg_11 == 3)label-danger"> Con frecuencia </span>
-                  @elseif($preg_11 == 2) label-warning"> A veces </span>
-                  @elseif($preg_11 == 1) label-success"> Casi Nunca </span>
-                  @else label-success"> Nunca </span>
-                @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>26.</td>
-                <td>Me molesta que me critiquen porque tomo o me drogo.</td>
-                <td><span class="label
-              @if($preg_26 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_26 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_26 == 2) label-warning"> A veces </span>
-              @elseif($preg_26 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>30.</td>
-                <td>Tengo dificultades para llevarme bien con mis  amigos y conocidos</td>
-                <td><span class="label
-              @if($preg_30 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_30 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_30 == 2) label-warning"> A veces </span>
-              @elseif($preg_30 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>32.</td>
-                <td>Tengo problemas en el trabajo/universidad debido a las drogas o el alcohol.</td>
-                <td><span class="label
-              @if($preg_32 == 4) label-danger"> Casi siempre </span>
-              @elseif($preg_32 == 3) label-danger"> Con frecuencia </span>
-              @elseif($preg_32 == 2) label-warning"> A veces </span>
-              @elseif($preg_32 == 1) label-success"> Casi Nunca </span>
-              @else label-success"> Nunca </span>
-              @endif
-                </td>
-              </tr>
-
-              <tr>
-                <td>37.</td>
-                <td>Me satisfacen mis relaciones con mis seres queridos</td>
-                <td><span class="label
-              @if($preg_37 == 4) label-danger"> Nunca </span>
-              @elseif($preg_37 == 3) label-danger"> Casi Nunca </span>
-              @elseif($preg_37 == 2) label-warning"> A veces </span>
-              @elseif($preg_37 == 1) label-success"> Con frecuencia </span>
-              @else label-success"> Casi siempre </span>
-              @endif
-                </td>
-              </tr>
-
-
-              </table>
-           <!-- Final de la tabla -->
-           
+            <!-- /.box-header -->
+            <div class="box-body pad">
+              <form>
+                    <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                            This is my textarea to be replaced with CKEditor.
+                    </textarea>
+              </form>
+            </div>
           </div>
           <!-- /.box -->
-        </div>
-        <!-- /.col (right) -->
-      </div>
-      <!-- /.row -->
 
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Bootstrap WYSIHTML5
+                <small>Simple and fast</small>
+              </h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                  <i class="fa fa-minus"></i></button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove">
+                  <i class="fa fa-times"></i></button>
+              </div>
+              <!-- /. tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body pad">
+              <form>
+                <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-->
+      </div>
+      <!-- ./row -->
     </section>
     <!-- /.content -->
   </div>
@@ -752,98 +775,23 @@
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Select2 -->
-<script src="plugins/select2/select2.full.min.js"></script>
-<!-- InputMask -->
-<script src="plugins/input-mask/jquery.inputmask.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<!-- date-range-picker -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
-<!-- bootstrap datepicker -->
-<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-<!-- bootstrap color picker -->
-<script src="plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
-<!-- bootstrap time picker -->
-<script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
-<!-- SlimScroll 1.3.0 -->
-<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-<!-- iCheck 1.0.1 -->
-<script src="plugins/iCheck/icheck.min.js"></script>
 <!-- FastClick -->
 <script src="plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-<!-- Page script -->
+<!-- CK Editor -->
+<script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <script>
   $(function () {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-
-    //Datemask dd/mm/yyyy
-    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
-    //Datemask2 mm/dd/yyyy
-    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
-    //Money Euro
-    $("[data-mask]").inputmask();
-
-    //Date range picker
-    $('#reservation').daterangepicker();
-    //Date range picker with time picker
-    $('#reservationtime').daterangepicker({timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A'});
-    //Date range as a button
-    $('#daterange-btn').daterangepicker(
-        {
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
-        },
-        function (start, end) {
-          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        }
-    );
-
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    });
-
-    //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].square, input[type="radio"].square').iCheck({
-      checkboxClass: 'icheckbox_square-gree',
-      radioClass: 'iradio_square-green'
-    });
-    //Red color scheme for iCheck
-    $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-      checkboxClass: 'icheckbox_minimal-red',
-      radioClass: 'iradio_minimal-red'
-    });
-    //Flat red color scheme for iCheck
-    $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-      checkboxClass: 'icheckbox_flat-green',
-      radioClass: 'iradio_flat-green'
-    });
-
-    //Colorpicker
-    $(".my-colorpicker1").colorpicker();
-    //color picker with addon
-    $(".my-colorpicker2").colorpicker();
-
-    //Timepicker
-    $(".timepicker").timepicker({
-
-      showInputs: false
-    });
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace('editor1');
+    //bootstrap WYSIHTML5 - text editor
+    $(".textarea").wysihtml5();
   });
 </script>
 </body>

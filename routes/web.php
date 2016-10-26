@@ -14,9 +14,12 @@
 /// URL::setRootControllerNamespace('App\Http\Controllers');
 
 Route::get('/', function () {
-    return view('formulario.test_oq');
+    return view('editors');
 });
 
+Route::get('pauta_evaluacion', function () {
+    return view('formulario.pautaEvaluacion');
+});
 
 Route::get('test_oq',[
 	'uses' => 'ControllerTestoq@view',
