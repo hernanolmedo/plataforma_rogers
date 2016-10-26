@@ -310,6 +310,8 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
+      <img src="dist/img/logo-usach.png" class="center-block" style="width:100px;height:150px;">
+          <br>  
         <div class="pull-left image">
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>

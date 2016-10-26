@@ -257,6 +257,7 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Omar Matus</span>
             </a>
@@ -310,6 +311,8 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
+          <img src="dist/img/logo-usach.png" class="center-block" style="width:100px;height:150px;">
+          <br>         
         <div class="pull-left image">
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
@@ -393,27 +396,27 @@
                       Con que frecuencia te sientes así?                    
                     </label>
                   </th>
-                  <th>
+                  <th style="text-align: center;">
                     <label>
                       NUNCA
                     </label>
                   </th>
-                  <th>
+                  <th style="text-align: center;">
                     <label>
                       CASI NUNCA
                     </label>
                   </th>
-                  <th>
+                  <th style="text-align: center;">
                     <label>
                       A VECES
                     </label>
                   </th>
-                  <th>
+                  <th style="text-align: center;">
                     <label>
                       CON FRECUENCIA
                     </label>
                   </th>
-                  <th>
+                  <th style="text-align: center;">
                     <label>
                       CASI SIEMPRE
                     </label>
@@ -422,1532 +425,1532 @@
                 
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         1.- Me llevo bien con otros.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre1" class="square" value="4">
+                      <input type="radio" name="pre1" class="square center" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre1" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre1" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre1" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre1" class="square" value="0">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         2.- Me canso rápidamente.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre2" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre2" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre2" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre2" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre2" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         3.- Nada me interesa.                
                     </label>
-                  </th>
-                 <th>
+                  </td>
+                 <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre3" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre3" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre3" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre3" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre3" class="square" value="4">                   
                     </label>
-                  </th>                
+                  </td>                
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         4.- Me siento presionado (estresado) en el trabajo/ universidad.                
                     </label>
-                  </th>
-                 <th>
+                  </td>
+                 <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre4" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre4" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre4" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre4" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre4" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         5.- Me siento culpable.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre5" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre5" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre5" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre5" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre5" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         6.- Me siento irritado, molesto.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre6" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre6" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre6" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre6" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre6" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         7.- Me siento contento con mi matrimonio/pareja (si no  tienes pareja: "me siento contento con estar soltero/  a).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre7" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre7" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre7" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre7" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre7" class="square" value="0">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         8.- Pienso en quitarme la vida.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre8" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre8" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre8" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre8" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre8" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         9.- Me siento débil.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre9" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre9" class="square" value="1">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre9" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre9" class="square" value="3">                   
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre9" class="square" value="4">                   
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         10.- Me siento atemorizado.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre10" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre10" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre10" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre10" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre10" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         11.- Necesito tomar bebidas alcohólicas en la mañana,   después de haber tomado el dia anterior (si esto no   ocurre, marque nunca).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre11" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre11" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre11" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre11" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre11" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         12.- Encuentro satisfacción en mi trabajo/  universidad.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre12" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre12" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre12" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre12" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre12" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         13.- Soy una persona feliz.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre13" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre13" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre13" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre13" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre13" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         14.- Trabajo/estudio excesivamente (más de la   cuenta).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre14" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre14" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre14" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre14" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre14" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         15.- Me siento inútil.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre15" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre15" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre15" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre15" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre15" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         16.- Me abruman (angustian) los problemas de mi   familia.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre16" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre16" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre16" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre16" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre16" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         17.- Mi vida sexual me llena (sea activa o  no).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre17" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre17" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre17" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre17" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre17" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         18.- Me siento solo.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre18" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre18" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre18" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre18" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre18" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         19.- Discuto frecuentemente.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre19" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre19" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre19" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre19" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre19" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         20.- Me siento querido y que me   necesitan.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre20" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre20" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre20" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre20" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre20" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         21.- Disfruto mi tiempo libre.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre21" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre21" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre21" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre21" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre21" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         22.- Tengo dificultades para  concentrarme.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre22" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre22" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre22" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre22" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre22" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         23.- Me siento sin esperanzas en el   futuro.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre23" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre23" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre23" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre23" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre23" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         24.- Estoy contento conmigo mismo.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre24" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre24" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre24" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre24" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre24" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         25.- Me perturban o molestan pensamientos de los que no   me puedo deshacer.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre25" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre25" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre25" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre25" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre25" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         26.- Me molesta que me critiquen porque tomo o me   drogo. (No se refiere a medicamentos). (Si esto no le   ocurre, marque nunca).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre26" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre26" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre26" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre26" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre26" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         27.- Tengo malestares estomacales.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre27" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre27" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre27" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre27" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre27" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         28.- Trabajo/estudio tan bien como lo hacia   antes.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre28" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre28" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre28" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre28" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre28" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         29.- Mi corazon palpita demasiado.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre29" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre29" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre29" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre29" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre29" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         30.- Tengo dificultades para llevarme bien con mis  amigos y conocidos.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre30" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre30" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre30" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre30" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre30" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         31.- Estoy satisfecho con mi vida.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre31" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre31" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre31" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre31" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre31" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         32.- Tengo problemas en el trabajo/universidad debido a   las drogas o el alcohol. (Si esto no le ocurre, marque  nunca).                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre32" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre32" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre32" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre32" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre32" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         33.- Siento que algo malo va a ocurrir.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre33" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre33" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre33" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre33" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre33" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         34.- Tengo los músculos adolorídos.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre34" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre34" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre34" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre34" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre34" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         35.- Me atemorizan los espacios abiertos, el manejar,   el estar dentro de un bus, el metro, ascensores,  etc.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre35" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre35" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre35" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre35" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre35" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         36.- Me siento nervioso.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre36" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre36" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre36" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre36" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre36" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         37.- Me satisfacen mis relaciones con mis seres   queridos.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre37" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre37" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre37" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre37" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre37" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         38.- Siento que me va bien en el trabajo/ escuela.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre38" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre38" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre38" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre38" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre38" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         39.- Tengo muchas discuciones en el trabajo/  universidad.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre39" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre39" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre39" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre39" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre39" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         40.- Siento que algo anda mal con mi  mente.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre40" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre40" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre40" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre40" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre40" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         41.- Tengo dificultades para dormir, o no me puedo  quedar dormido.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre41" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre41" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre41" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre41" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre41" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         42.- Me siento triste.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre42" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre42" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre42" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre42" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre42" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         43.- Mis relaciones con otros me  satisfacen.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre43" class="square" value="4">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre43" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre43" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre43" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre43" class="square" value="0">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         44.- Me enojo tanto en el trabajo/universidad que puedo   hacer algo de lo que después me puedo   arrepentir.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre44" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre44" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre44" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre44" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre44" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
       
   
                 <tr>
-                  <th>
+                  <td>
                     <label>
                         45.- Me dan dolores de cabeza.                
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre45" class="square" value="0">
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre45" class="square" value="1">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre45" class="square" value="2" required>
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre45" class="square" value="3">                    
                     </label>
-                  </th>
-                  <th>
+                  </td>
+                  <td  style="text-align: center;">
                     <label class="radio-inline">
                       <input type="radio" name="pre45" class="square" value="4">                    
                     </label>
-                  </th>              
+                  </td>              
                 </tr>
               </form>
               </table>
@@ -2245,7 +2248,7 @@
 
     //iCheck for checkbox and radio inputs
     $('input[type="checkbox"].square, input[type="radio"].square').iCheck({
-      checkboxClass: 'icheckbox_square-gree',
+      checkboxClass: 'icheckbox_square-green',
       radioClass: 'iradio_square-green'
     });
     //Red color scheme for iCheck

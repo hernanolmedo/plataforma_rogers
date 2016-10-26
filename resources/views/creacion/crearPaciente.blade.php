@@ -310,6 +310,8 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
+      <img src="dist/img/logo-usach.png" class="center-block" style="width:100px;height:150px;">
+          <br>  
         <div class="pull-left image">
           <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
@@ -486,155 +488,156 @@
                         <tr>
                           <th>
                             <label>
-                              Día de la semana                    
+                              Bloque / Dia de la semana                    
                             </label>
                           </th>
                           <th>
                             <label>
-                              Bloque 1
+                              Lunes
                             </label>
                           </th>
                           <th>
                             <label>
-                              Bloque 2
+                              Martes
                             </label>
                           </th>
                           <th>
                             <label>
-                              Bloque 3
+                              Miércoles
                             </label>
                           </th>
                           <th>
                             <label>
-                              Bloque 4
+                              Jueves
                             </label>
                           </th>
                           <th>
                             <label>
-                              Bloque 5
+                              Viernes
                             </label>
-                          </th>
-                          <th>
-                            <label>
-                              Bloque 6
-                            </label>
-                          </th>            
+                          </th>                                     
                         </tr>
 
                         <tr>
                             <td>
-                                Lunes
+                                Bloque 1
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="L1" value="L1">
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="L2" value="L2">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="L3" value="L3">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="L4" value="L4">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="L5" value="L5">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="L6" value="L6">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                Martes
-                            </td>
-                            <td>
                                 <input type="checkbox" class="flat-red" name="M1" value="M1">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="M2" value="M2">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="M3" value="M3">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="M4" value="M4">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="M5" value="M5">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="M6" value="M6">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                Miercoles
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="W1" value="W1">
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="W2" value="W2">
+                                <input type="checkbox" class="flat-red" name="J1" value="J1">
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="W3" value="W3">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="W4" value="W4">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="W5" value="W5">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="W6" value="W6">
+                                <input type="checkbox" class="flat-red" name="V1" value="V1">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                Jueves
+                                Bloque 2
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="J1" value="J1">
+                                <input type="checkbox" class="flat-red" name="L2" value="L2">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="M2" value="M2">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="W2" value="W2">
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="J2" value="J2">
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="J3" value="J3">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="J4" value="J4">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="J5" value="J5">
-                            </td>
-                            <td>
-                                <input type="checkbox" class="flat-red" name="J6" value="J6">
+                                <input type="checkbox" class="flat-red" name="V2" value="V2">
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                Viernes
+                                Bloque 3
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="V1" value="V1">
+                                <input type="checkbox" class="flat-red" name="L3" value="L3">
                             </td>
                             <td>
-                                <input type="checkbox" class="flat-red" name="V2" value="V2">
+                                <input type="checkbox" class="flat-red" name="M3" value="M3">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="W3" value="W3">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="J3" value="J3">
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="V3" value="V3">
                             </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Bloque 4
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="L4" value="L4">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="M4" value="M4">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="W4" value="W4">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="J4" value="J4">
+                            </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="V4" value="V4">
                             </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Bloque 5
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="L5" value="L5">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="M5" value="M5">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="W5" value="W5">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="J5" value="J5">
+                            </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="V5" value="V5">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Bloque 6
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="L6" value="L6">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="M6" value="M6">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="W6" value="W6">
+                            </td>
+                            <td>
+                                <input type="checkbox" class="flat-red" name="J6" value="J6">
                             </td>
                             <td>
                                 <input type="checkbox" class="flat-red" name="V6" value="V6">
