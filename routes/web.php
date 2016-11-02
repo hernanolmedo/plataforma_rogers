@@ -21,6 +21,14 @@ Route::get('pauta_evaluacion', function () {
     return view('formulario.pautaEvaluacion');
 });
 
+Route::get('ficha_ingreso', function () {
+    return view('formulario.fichaIngreso');
+});
+
+Route::get('resumen_sesion', function () {
+    return view('formulario.resumenSesion');
+});
+
 Route::get('test_oq',[
 	'uses' => 'ControllerTestoq@view',
 	'as' => 'TestoqView'
