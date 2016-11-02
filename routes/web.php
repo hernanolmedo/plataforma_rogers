@@ -36,7 +36,10 @@ Route::get('crear_paciente', [
 
 Route::post('crear_paciente','PacienteController@guardarPaciente');
 //Route::Controller('testTerminado','ControllerTestoq');
-
+Route::post('crear_paciente','PacienteController@buscarPaciente');   // probando rutear Buscador y ventana crear_paciente
+Route::get('resultadoBusquedaPaciente', function () {
+    return view('vista_pacientes.resultadoBusquedaPaciente');
+});
 //Route::get('prueba_admin', function () {
 //    return view('index2');
 //});

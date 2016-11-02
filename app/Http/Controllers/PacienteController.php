@@ -48,6 +48,8 @@ class PacienteController extends Controller
             $paciente -> nombre_padre_tutor = $request->input('nombre_padre_tutor', 'SIN PADRE/MADRE O TUTOR');
             $paciente -> fono_padre_tutor = $request->input('fono_padre_tutor', '00000000');
             $paciente -> sistema_previsional = $request->input('sistema_previsional');
+             $hoy = date('Y-m-d', strtotime(date('Y-m-d')));
+             $paciente -> fecha_ingreso = $hoy;
 
             if($paciente->sistema_previsional == "ISAPRE") 
                 $paciente->sistema_previsional = $paciente->sistema_previsional . ": " . strtoupper($request->input('isapre_cual'));
@@ -75,4 +77,35 @@ class PacienteController extends Controller
             echo 'Excepción capturada: ',  $e->getMessage(), "\n";
         }
     }
+
+
+ public function buscarPaciente(Request $request2){
+    $arrayDatos ;
+    $paciente = new Paciente;
+      try {
+             $rutOnombre  = $request2->input('q');
+            }
+            catch(Exception $e){
+                echo 'Excepción capturada: ',$e->getMessage(), "\n";
+            }
+            $consulta_mysql="select *
+                                from paciente
+                                    where rut ="+q+" or nombre LIKE '%"+@rutOnombre+"%' " ;
+            $resultado_consulta_mysql=mysql_query($consulta_mysql,$conexion);
+
+            while($arrayResultados=mysql_fetch_array($resultado_consulta_mysql)){
+             echo $arrayResultados['nombre']." ";
+             $arrayDatos.add($arrayResultados['nombre']);
+            }
+
+            return response()->view("vista_pacientes.resultadoBusquedaPaciente", $arrayDatos, 200);
+}
+
+
+
+
+
+
+
+
 }

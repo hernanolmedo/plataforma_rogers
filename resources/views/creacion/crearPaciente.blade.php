@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="plugins/iCheck/all.css">
   <!-- Bootstrap Color Picker -->
   <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
   <!-- Bootstrap time Picker -->
   <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Select2 -->
@@ -397,7 +399,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="date" class="form-control pull-right" id="datepicker" step="1" name="fecha_nac" maxlength="10" placeholder="dd/mm/aaaa" min="01/01/1900" max="01/01/2016" required>
+                  <input type="text" class="form-control pull-right" id="datepicker" name="fecha_nac" required>                  
                 </div>
 
                 <br>
