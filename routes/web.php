@@ -32,7 +32,6 @@ Route::get('resumen_sesion', function () {
 Route::get('test_oq',[
 	'uses' => 'ControllerTestoq@view',
 	'as' => 'TestoqView'
-  //  return view('formulario.test_oq');
 ]);
 
 Route::post('test_oq','ControllerTestoq@obtenerOQ');
@@ -42,12 +41,23 @@ Route::get('crear_paciente', [
     'as' => 'CrearPacienteView'
 ]);
 
+
 Route::post('crear_paciente','PacienteController@guardarPaciente');
 //Route::Controller('testTerminado','ControllerTestoq');
-Route::post('crear_paciente','PacienteController@buscarPaciente');   // probando rutear Buscador y ventana crear_paciente
+//Route::post('crear_paciente','PacienteController@buscarPaciente');   // probando rutear Buscador y ventana crear_paciente
+
 Route::get('resultadoBusquedaPaciente', function () {
     return view('vista_pacientes.resultadoBusquedaPaciente');
 });
+
 //Route::get('prueba_admin', function () {
 //    return view('index2');
-//});
+
+
+// rutas olmedo 
+Route::get('epicrisis', [
+    'uses' => 'EpicrisisController@viewEpicrisis',
+    'as' => 'EpicrisisView'
+]);
+
+Route::post('epicrisis','EpicrisisController@guardarEpicrisis');
