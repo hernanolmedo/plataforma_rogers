@@ -11,7 +11,7 @@ use App\Paciente;
 
 use App\Http\Requests;
 use App\Testoq;
-
+// probando or segunda con up
 
 class ControllerTestoq extends Controller
 {
