@@ -364,11 +364,6 @@
         Plataforma Rogers
         <small>Usuario Alumno</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Forms</a></li>
-        <li class="active">Advanced Elements</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -393,6 +388,8 @@
                     <li><a href="#">Ver ficha de paciente </a></li>
                     <li><a href="#">Ver resultados test OQ <span class="pull-right badge bg-green">5 realizados</span></a></li>
                     <li><a href="#">Agregar Pauta de evaluación</a></li>
+                    <li><a href="#">Crear Ficha de Ingreso</a></li>
+                    <li><a href="#">Agregar resumen de sesión</a></li>
                     <li><a href="#">Placeholder para mas opciones <span class="pull-right badge bg-red">Aqui puede ir numeros o algo</span></a></li>
                   </ul>
                 </div>
@@ -412,6 +409,8 @@
                     <li><a href="#">Ver ficha de paciente </a></li>
                     <li><a href="#">Ver resultados test OQ <span class="pull-right badge bg-green">5 realizados</span></a></li>
                     <li><a href="#">Agregar Pauta de evaluación</a></li>
+                    <li><a href="#">Crear Ficha de Ingreso</a></li>
+                    <li><a href="#">Agregar resumen de sesión</a></li>
                     <li><a href="#">Placeholder para mas opciones <span class="pull-right badge bg-red">Aqui puede ir numeros o algo</span></a></li>
                   </ul>
                 </div>
