@@ -434,10 +434,6 @@
                   <form role="form" method="post">
                     {!! csrf_field() !!}
                     <div class="form-group">
-                    <label>¿Edad del paciente?</label>
-                      <input type="text" name="edad" class="form-control" placeholder="Ejemplo: 21" maxlength="3" >
-                    </div>
-                    <div class="form-group">
                       <label>¿Se ha atendido en salud mental en la Usach antes?</label>
                       <textarea name="antendido_usach" class="form-control" rows="3" placeholder="Brevemente"></textarea>
                     </div>
@@ -523,18 +519,10 @@
               
                       </div>
                     </div>
-
-
-
-                  </form>
-
-                  
-            <!-- /.box-body -->           
-          </div>
-          <!-- /.box -->
           <div class="box-footer">
               <button type="submit" class="btn btn-info pull-right">Enviar Ficha</button>
           </div>
+                  </form>
         </div>
         <!-- /.col (right) -->
       </div>

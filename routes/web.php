@@ -21,10 +21,15 @@ Route::get('pauta_evaluacion', function () {
     return view('formulario.pautaEvaluacion');
 });
 
-Route::get('ficha_ingreso', function () {
-    return view('formulario.fichaIngreso');
-});
+Route::get('ficha_ingreso', [
+    'uses' => 'fichaIngresoController@view',
+    'as' => 'FichaIngresoView'
+]);
 
+Route::post('ficha_ingreso', [
+    'uses' => 'fichaIngresoController@guardarFichaIngreso',
+    'as' => 'GuardarFichaIngreso'
+]);
 Route::get('resumen_sesion', function () {
     return view('formulario.resumenSesion');
 });

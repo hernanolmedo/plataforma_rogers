@@ -886,14 +886,16 @@
               
                 </div>
               </div>
-            </form>                           
+
 
             <!-- /.box-body -->
             <div class="box-footer">
               <button type="submit" class="btn btn-success">Enviar Evaluación</button>
             </div>           
           </div>
-          <!-- /.box -->
+
+            </form>
+            <!-- /.box -->
 
         </div>
         <!-- /.col (right) -->
