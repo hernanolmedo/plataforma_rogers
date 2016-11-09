@@ -13,16 +13,14 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('usuario', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
-            $table->string('rut');
+            $table->string('name');
+            $table->string('rut')->default('0000000000');
             $table->string('email')->unique();
-            $table->string('contrasena');
-            // Dejamos por default la asignación de tipo_usuario='paciente' al crear nuevo nuevo usuario
-            $table->enum('tipo_usuario',['administrador','paciente','secretaria','psicologo'])->default('paciente');
+            $table->enum('tipo_usuario',['administrador','secretaria','psicologo']);
+            $table->string('password');
             $table->rememberToken();
-            // esto queda como atributo fecha_creac_cuenta
             $table->timestamps();
         });
     }
@@ -34,6 +32,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('usuario');
+        Schema::dropIfExists('users');
     }
 }

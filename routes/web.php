@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('index2');
 });
 
+Auth::routes();
+
 Route::get('pauta_evaluacion', function () {
     return view('formulario.pautaEvaluacion');
 });
@@ -63,6 +65,9 @@ Route::get('resultadoBusquedaPaciente', function () {
 //    return view('index2');
 
 
+
+
+
 // rutas olmedo 
 Route::get('epicrisis', [
     'uses' => 'EpicrisisController@viewEpicrisis',
@@ -70,3 +75,7 @@ Route::get('epicrisis', [
 ]);
 
 Route::post('epicrisis','EpicrisisController@guardarEpicrisis');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
