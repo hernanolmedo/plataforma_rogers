@@ -14,11 +14,15 @@
 /// URL::setRootControllerNamespace('App\Http\Controllers');
 
 Route::get('/', function () {
-    return view('editors');
+    return view('index2');
 });
 
 Route::get('pauta_evaluacion', function () {
     return view('formulario.pautaEvaluacion');
+});
+
+Route::get('ficha_paciente', function () {
+    return view('vista_pacientes.fichaPaciente');
 });
 
 Route::get('ficha_ingreso', [
