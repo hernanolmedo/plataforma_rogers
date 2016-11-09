@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/home', 'HomeController@index');
+
 Route::get('pauta_evaluacion', function () {
     return view('formulario.pautaEvaluacion');
 });
@@ -76,6 +78,6 @@ Route::get('epicrisis', [
 
 Route::post('epicrisis','EpicrisisController@guardarEpicrisis');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+
+
