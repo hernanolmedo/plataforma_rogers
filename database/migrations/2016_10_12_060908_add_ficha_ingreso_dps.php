@@ -28,7 +28,7 @@ class AddFichaIngresoDps extends Migration
             $table->timestamp('updated_at')->nullable();
         
             $table->foreign('id_paciente')->references('id')->on('paciente');
-            $table->foreign('id_usuario')->references('id')->on('usuario');
+            $table->foreign('id_usuario')->references('id')->on('users');
         });
     }
 

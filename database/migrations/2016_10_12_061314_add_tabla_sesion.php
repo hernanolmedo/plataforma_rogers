@@ -15,11 +15,12 @@ class AddTablaSesion extends Migration
     {
         Schema::create('sesion', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamp('fecha');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->integer('id_usuario')->unsigned();
             $table->integer('id_paciente')->unsigned();
-            $table->string('resumen');
-            $table->string('observaciones');
+            $table->text('resumen');
+            $table->text('observaciones');
 
 
             $table->foreign('id_paciente')->references('id')->on('paciente');

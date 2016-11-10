@@ -37,13 +37,14 @@ Route::get('ficha_ingreso', [
     'as' => 'FichaIngresoView'
 ]);
 
-Route::post('ficha_ingreso', [
-    'uses' => 'fichaIngresoController@guardarFichaIngreso',
-    'as' => 'GuardarFichaIngreso'
+Route::post('ficha_ingreso', 'fichaIngresoController@guardarFichaIngreso');
+
+Route::get('resumen_sesion', [
+    'uses' => 'resumenSesionController@view',
+    'as' => 'ResumenSesionView'
 ]);
-Route::get('resumen_sesion', function () {
-    return view('formulario.resumenSesion');
-});
+
+Route::post('resumen_sesion', 'resumenSesionController@guardarResumenSesion');
 
 Route::get('test_oq',[
 	'uses' => 'ControllerTestoq@view',

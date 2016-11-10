@@ -69,7 +69,7 @@
                 <!-- /.box-header -->
                 <div class="box-body pad">
               
-                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" name="resumen" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required></textarea>
               
                 </div>
               </div>
@@ -88,12 +88,10 @@
                 <!-- /.box-header -->
                 <div class="box-body pad">
               
-                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" name="observaciones" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                 </div>
               </div>
-            </form>                           
-
             <!-- /.box-body -->
             <div class="box-footer">
               <button type="submit" class="btn btn-success">Enviar resumen de sesión</button>
@@ -104,6 +102,7 @@
         </div>
         <!-- /.col (right) -->
       </div>
+      </form>
       <!-- /.row -->
 
     </section>
