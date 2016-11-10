@@ -70,22 +70,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre1" class="square center" value="0">
+                      <input type="radio" name="pre1" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre1" class="square center" value="1">
+                      <input type="radio" name="pre1" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre1" class="square" value="2">                   
+                      <input type="radio" name="pre1" class="square" value="MODERADO">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre1" class="square" value="3" required>
+                      <input type="radio" name="pre1" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -98,22 +98,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre2" class="square center" value="0">
+                      <input type="radio" name="pre2" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre2" class="square center" value="1">
+                      <input type="radio" name="pre2" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre2" class="square" value="2">                   
+                      <input type="radio" name="pre2" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre2" class="square" value="3" required>
+                      <input type="radio" name="pre2" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -126,22 +126,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre3" class="square center" value="0">
+                      <input type="radio" name="pre3" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre3" class="square center" value="1">
+                      <input type="radio" name="pre3" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre3" class="square" value="2">                   
+                      <input type="radio" name="pre3" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre3" class="square" value="3" required>
+                      <input type="radio" name="pre3" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -154,22 +154,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre4" class="square center" value="0">
+                      <input type="radio" name="pre4" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre4" class="square center" value="1">
+                      <input type="radio" name="pre4" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre4" class="square" value="2">                   
+                      <input type="radio" name="pre4" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre4" class="square" value="3" required>
+                      <input type="radio" name="pre4" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -182,22 +182,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre5" class="square center" value="0">
+                      <input type="radio" name="pre5" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre5" class="square center" value="1">
+                      <input type="radio" name="pre5" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre5" class="square" value="2">                   
+                      <input type="radio" name="pre5" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre5" class="square" value="3" required>
+                      <input type="radio" name="pre5" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -210,22 +210,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre6" class="square center" value="0">
+                      <input type="radio" name="pre6" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre6" class="square center" value="1">
+                      <input type="radio" name="pre6" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre6" class="square" value="2">                   
+                      <input type="radio" name="pre6" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre6" class="square" value="3" required>
+                      <input type="radio" name="pre6" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -238,22 +238,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre7" class="square center" value="0">
+                      <input type="radio" name="pre7" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre7" class="square center" value="1">
+                      <input type="radio" name="pre7" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre7" class="square" value="2">                   
+                      <input type="radio" name="pre7" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre7" class="square" value="3" required>
+                      <input type="radio" name="pre7" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -266,22 +266,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre8" class="square center" value="0">
+                      <input type="radio" name="pre8" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre8" class="square center" value="1">
+                      <input type="radio" name="pre8" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre8" class="square" value="2">                   
+                      <input type="radio" name="pre8" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre8" class="square" value="3" required>
+                      <input type="radio" name="pre8" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -294,22 +294,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre9" class="square center" value="0">
+                      <input type="radio" name="pre9" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre9" class="square center" value="1">
+                      <input type="radio" name="pre9" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre9" class="square" value="2">                   
+                      <input type="radio" name="pre9" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre9" class="square" value="3" required>
+                      <input type="radio" name="pre9" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -322,22 +322,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre10" class="square center" value="0">
+                      <input type="radio" name="pre10" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre10" class="square center" value="1">
+                      <input type="radio" name="pre10" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre10" class="square" value="2">                   
+                      <input type="radio" name="pre10" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre10" class="square" value="3" required>
+                      <input type="radio" name="pre10" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -350,22 +350,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre11" class="square center" value="0">
+                      <input type="radio" name="pre11" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre11" class="square center" value="1">
+                      <input type="radio" name="pre11" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre11" class="square" value="2">                   
+                      <input type="radio" name="pre11" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre11" class="square" value="3" required>
+                      <input type="radio" name="pre11" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -378,22 +378,22 @@
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre12" class="square center" value="0">
+                      <input type="radio" name="pre12" class="square center" value="NO PRESENTA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre12" class="square center" value="1">
+                      <input type="radio" name="pre12" class="square center" value="LEVE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre12" class="square" value="2">                   
+                      <input type="radio" name="pre12" class="square" value="MODERADO">                   
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="pre12" class="square" value="3" required>
+                      <input type="radio" name="pre12" class="square" value="GRAVE" required>
                     </label>
                   </td>             
                 </tr>
@@ -403,7 +403,7 @@
               <!-- MOTIVO DE CONSULTA-->
               <div class="form-group">
                   <label>Motivo de consulta</label>
-                  <textarea class="form-control" rows="3" placeholder="Especificaciones breves ..."></textarea>
+                  <textarea class="form-control" rows="3" placeholder="Especifique brevemente" name="motivo_consulta" required></textarea>
               </div>
               <!-- FIN MOTIVO DE CONSULTA-->
               <!-- INICIO INDICACIONES DE TRATAMIENTO-->
@@ -441,29 +441,29 @@
                 <tr>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="psicoterapia" class="square center" value="1">
+                      <input type="radio" name="indicaciones" class="square" value="PSICOTERAPIA INDIVIDUAL URGENTE">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="psicoterapia" class="square center" value="2">
+                      <input type="radio" name="indicaciones" class="square center" value="PSICOTERAPIA INDIVIDUAL A">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="psicoterapia" class="square" value="3">                   
+                      <input type="radio" name="indicaciones" class="square center" value="PSICOTERAPIA INDIVIDUAL B">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="psicoterapia" class="square" value="4" required>
+                      <input type="radio" name="indicaciones" class="square" value="NO REQUIERE PSICOTERAPIA">
                     </label>
                   </td>
                   <td  style="text-align: center;">
                     <label class="radio-inline">
-                      <input type="radio" name="psicoterapia" class="square" value="5" required>
+                      <input type="radio" name="indicaciones" class="square" value="DERIVACIÓN A PSIQUIATRÍA" required>
                     </label>
-                  </td>            
+                  </td>
                 </tr>
               </table>
               <table class="table table-bordered">                
@@ -476,13 +476,13 @@
                   <th style="text-align: center;">
                     <label>TERAPIA GRUPAL </label>
                     <label class="radio-inline">
-                      <input type="radio" name="se_sugiere" class="square center" value="1">
+                      <input type="checkbox" name="checkboxTG" class="square center" value="TERAPIA GRUPAL">
                     </label>
                   </th>
                   <th style="text-align: center;">
                     <label>COACHING </label>
                     <label class="radio-inline">
-                      <input type="radio" name="se_sugiere" class="square center" value="2">
+                      <input type="checkbox" name="checkboxC" class="square center" value="COACHING">
                     </label>
                   </th>                                       
                 </tr> 
@@ -504,7 +504,7 @@
                 <!-- /.box-header -->
                 <div class="box-body pad">
               
-                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" name="observaciones" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                 </div>
               </div>
@@ -523,7 +523,7 @@
                 <!-- /.box-header -->
                 <div class="box-body pad">
               
-                    <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                    <textarea class="textarea" name="comentarios" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                 </div>
               </div>

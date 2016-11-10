@@ -21,9 +21,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('pauta_evaluacion', function () {
-    return view('formulario.pautaEvaluacion');
-});
+Route::get('pauta_evaluacion', [
+    'uses' => 'pautaEvaluacionController@view',
+    'as' => 'PautaEvaluacionView'
+]);
+
+Route::post('pauta_evaluacion','pautaEvaluacionController@guardarPautaEvaluacion');
 
 Route::get('ficha_paciente', function () {
     return view('vista_pacientes.fichaPaciente');
