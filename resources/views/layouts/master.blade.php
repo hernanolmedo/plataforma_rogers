@@ -108,7 +108,7 @@
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-bell-o"></i></a>
           </li>
         </ul>
       </div>
@@ -120,18 +120,14 @@
     <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
-      <img src="dist/img/logo-usach.png" class="center-block" style="width:100px;height:150px;">
+      <img src="dist/img/logo-usach.png" class="center-block img-responsive">
           <br>  
-        <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Omar Matus</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> En linea</a>
-        </div>
       </div>
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
+      <ul class="sidebar-menu">
+        <li class="header">Buscar Paciente</li>
+      </ul>
+      <form action="#" method="get" class="sidebar-form">      
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Rut o nombre paciente...">
               <span class="input-group-btn">
@@ -181,15 +177,10 @@
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- Create the tabs -->
-    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-    </ul>
     <!-- Tab panes -->
     <div class="tab-content">
       <!-- Home tab content -->
-      <div class="tab-pane" id="control-sidebar-home-tab">
+      <div class="tab-pane active" id="control-sidebar-home-tab">
         <h3 class="control-sidebar-heading">Recent Activity</h3>
         <ul class="control-sidebar-menu">
           <li>
@@ -331,8 +322,7 @@
 <script src="plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+
 <!-- CK Editor -->
 <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
 <!-- Page script -->
