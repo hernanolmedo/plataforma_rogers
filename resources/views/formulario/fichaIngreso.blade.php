@@ -4,7 +4,7 @@
     <section class="content-header">
       <h1>
         Plataforma Rogers
-        <small>Usuario Alumno</small>
+        <small>Usuario</small>
       </h1>
     </section>
 
@@ -17,8 +17,7 @@
               <h3 class="box-title">Ficha de ingreso</h3>
             </div>
             <div class="box-body">
-                <form role="form" method="post">
-                {!! csrf_field() !!}
+
                   <h3>Identificación</h3>
                   <label>Nombre completo: </label>
                   Juan Carlos Lechuga Scarolla
@@ -73,16 +72,17 @@
                     {!! csrf_field() !!}
                     <div class="form-group">
                       <label>¿Se ha atendido en salud mental en la Usach antes?</label>
-                      <textarea name="antendido_usach" class="form-control" rows="3" placeholder="Brevemente"></textarea>
+                      <textarea name="atencion_anterior" class="form-control" rows="2" placeholder="Señale brevemente"></textarea>
                     </div>
 
                     <div class="form-group">
                       <label>¿Se ha atendido o se atiende en salud mental fuera de la Usach?</label>
-                      <textarea name="antendido_afuera_usach" class="form-control" rows="3" placeholder="Brevemente"></textarea>
+                      <textarea name="atencion_fuera_usach" class="form-control" rows="2" placeholder="Señale brevemente"></textarea>
                     </div>
                     <h3>Antecedentes</h3>
 
                     <div class="box box-info">
+
                       <div class="box-header">
                         <h3 class="box-title">Motivo de consulta y Sintomatología
                         </h3>
@@ -93,10 +93,11 @@
                         </div>
                         <!-- /. tools -->
                       </div>
+
                       <!-- /.box-header -->
                       <div class="box-body pad">
               
-                        <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        <textarea class="textarea" name="motivo_consulta_sint" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                       </div>
                     </div>
@@ -115,7 +116,7 @@
                       <!-- /.box-header -->
                       <div class="box-body pad">
               
-                        <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        <textarea class="textarea"  name="hipotesis_diag" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                       </div>
                     </div>
@@ -134,7 +135,7 @@
                       <!-- /.box-header -->
                       <div class="box-body pad">
               
-                        <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        <textarea class="textarea" name="ant_generales" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                       </div>
                     </div>
@@ -153,7 +154,7 @@
                       <!-- /.box-header -->
                       <div class="box-body pad">
               
-                        <textarea class="textarea" placeholder="Maximo de XXXX caracteres..." style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                        <textarea class="textarea" name="observaciones" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
               
                       </div>
                     </div>

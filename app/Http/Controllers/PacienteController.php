@@ -48,8 +48,6 @@ class PacienteController extends Controller
             $paciente -> nombre_padre_tutor = $request->input('nombre_padre_tutor', 'SIN PADRE/MADRE O TUTOR');
             $paciente -> fono_padre_tutor = $request->input('fono_padre_tutor', '00000000');
             $paciente -> sistema_previsional = $request->input('sistema_previsional');
-             $hoy = date('Y-m-d', strtotime(date('Y-m-d')));
-             $paciente -> fecha_ingreso = $hoy;
 
             if($paciente->sistema_previsional == "ISAPRE") 
                 $paciente->sistema_previsional = $paciente->sistema_previsional . ": " . strtoupper($request->input('isapre_cual'));

@@ -16,6 +16,7 @@ class AddTablaPaciente extends Migration
         Schema::create('paciente', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
          //   $table->integer('id_pauta')->unsigned();
             $table->integer('id_carrera')->unsigned();
             $table->string('nombre');

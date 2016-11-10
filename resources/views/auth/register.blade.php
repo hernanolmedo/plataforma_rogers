@@ -60,6 +60,7 @@
                                     <option value="secretaria">Secretaria</option>
                                     <option value="administrador">Administrador</option>
                                     <option value="psicologo">Psicólogo</option>
+                                    <option value="paciente">Paciente</option>
                                 </select>
                             </div>
 

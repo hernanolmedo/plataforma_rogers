@@ -15,15 +15,17 @@ class AddFichaIngresoDps extends Migration
     {
         Schema::create('ficha_ingreso_dps', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamp('created_at')->nullable();
+
             $table->integer('id_usuario')->unsigned();
             $table->integer('id_paciente')->unsigned();
-            $table->string('atencion_anterior');
-            $table->string('atencion_fuera_usach');
-            $table->string('motivo_consulta_sint');
-            $table->string('hipotesis_diag');
-            $table->string('ant_generales');
-            $table->string('observaciones');
+            $table->text('atencion_anterior');
+            $table->text('atencion_fuera_usach');
+            $table->text('motivo_consulta_sint');
+            $table->text('hipotesis_diag');
+            $table->text('ant_generales');
+            $table->text('observaciones');
+            $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         
             $table->foreign('id_paciente')->references('id')->on('paciente');
             $table->foreign('id_usuario')->references('id')->on('usuario');
