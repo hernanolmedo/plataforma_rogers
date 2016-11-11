@@ -1,5 +1,5 @@
 @extends('layouts.master')
-  @section('body')
+@section('body')
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -22,19 +22,23 @@
               <h3 class="box-title">Datos Personales</h3>
             </div>
             <div class="box-body">
-                <form role="form" method="post">
+                <form role="form" method="post" id="form1" name="form1" onblur="javascript:return Rut(document.form1.rut.value)">
                 {!! csrf_field() !!}
                 <div class="form-group">
                   <label>Nombre completo</label>
                   <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150" required pattern="[A-Z]{0-150}"/>
                 </div>
 
+
                 <div class="form-group">
-                  <label>RUT (sin puntos ni guión)</label>
-                  <input type="text" name="rut" class="form-control" placeholder="Ejemplo: 141136789" maxlength="15" required pattern="[0-9]{8-9} [0-9][K]{1}">
+
+                    <label>RUT</label>
+                  <input type="text" name="rut" id="rut" class="form-control" placeholder="Ejemplo: 14.113.678-9" maxlength="15" required pattern="[0-9]{8-9} [0-9][K]{1}">
+      
+
                 </div>
 
-                <label>Fecha de nacimiento:</label>
+                    <label>Fecha de nacimiento:</label>
                 <div class="input-group date">
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
