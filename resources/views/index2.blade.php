@@ -1,8 +1,6 @@
-@extends('layouts.master')
-  @section('body')
+@extends('layouts.app')
+  @section('content')
   <p>cuerpo</p>
   @endsection
-  @section('script')
-  <p>very code</p>
-  @endsection
+
   

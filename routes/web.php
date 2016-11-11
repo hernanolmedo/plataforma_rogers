@@ -14,7 +14,7 @@
 /// URL::setRootControllerNamespace('App\Http\Controllers');
 
 Route::get('/', function () {
-    return view('index2');
+    return view('auth.login');
 });
 
 Auth::routes();

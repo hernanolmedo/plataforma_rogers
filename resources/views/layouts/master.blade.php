@@ -21,7 +21,7 @@
   <!-- Bootstrap Color Picker -->
   <link rel="stylesheet" href="plugins/colorpicker/bootstrap-colorpicker.min.css">
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="../../plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
   <!-- Bootstrap time Picker -->
   <link rel="stylesheet" href="plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Select2 -->
@@ -68,29 +68,26 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs">NOMBRE DE USUARIO ACTIVO</span>
+              <span class="hidden-xs">{{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
-                <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
-                </p>
-              </li>
               <!-- Menu Body -->
               <li class="user-body">
                 <div class="row">
+                  <div class="col-xs-12 text-center">
+                  <p>{{ Auth::user()->name }} - {{ Auth::user()->tipo_usuario}}
+                  </p>
+                  </div>
+                </div>
+                <div class="row">
                   <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
+                    <a href="#"></a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
+                    <a href="#"></a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
+                    <a href="#"></a>
                   </div>
                 </div>
                 <!-- /.row -->
@@ -98,10 +95,14 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-default btn-flat">Ver/editar perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{ url('/logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Cerrar sesión</a>
+                  <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                  </form>
                 </div>
               </li>
             </ul>
