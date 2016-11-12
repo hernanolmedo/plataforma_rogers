@@ -69,7 +69,7 @@ Route::get('resultadoBusquedaPaciente', function () {
 });
 
 //Route::get('prueba_admin', function () {
-//    return view('index2');
+//    return view('index2');vvv
 
 Route::post('crear_paciente', function() { 
     if(Request::get('login')) { 
