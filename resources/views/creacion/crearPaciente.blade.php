@@ -349,7 +349,7 @@
                     <option value="T">SI</option>
                     <option value="F">NO</option>
                   </select>
-                <button type="submit" class="btn btn-info pull-right">Enviar datos</button>
+                <button type="submit" class="btn btn-success" name="btnIngresoPaciente">Enviar datos</button>
 
                 </form>              
             <!-- /.box-body -->           

@@ -17,6 +17,21 @@ class PacienteController extends Controller
     public function viewCrearPaciente(){
         return view('creacion.crearPaciente');
     }
+
+ /*  public function vistaPaciente(Request $request){
+
+        if(Input::get('btnIngresoPaciente')) {
+            $this->guardarPaciente();    
+        } elseif(Input::get('search-btn')) {
+            $this->buscarPaciente();     
+        }
+
+   }
+*/
+
+
+
+
     public function guardarPaciente(Request $request){
         $carrera_paciente = new Carrera_paciente;
         $paciente = new Paciente;
@@ -26,7 +41,6 @@ class PacienteController extends Controller
             $carrera_paciente -> ano_ingreso = $request->input('ano_ingreso');
             $carrera_paciente -> nivel_carrera = $request->input('nivel_carrera');
             $carrera_paciente -> jornada = $request->input('jornada');
-
             $matricula = $request->input('matricula_al_dia');
             if($matricula == "T")
                 $carrera_paciente -> matricula_al_dia = true;
@@ -95,8 +109,9 @@ class PacienteController extends Controller
              echo $arrayResultados['nombre']." ";
              $arrayDatos.add($arrayResultados['nombre']);
             }
-
-            return response()->view("vista_pacientes.resultadoBusquedaPaciente", $arrayDatos, 200);
+            
+           // return $this->render("vista_pacientes.resultadoBusquedaPaciente",$arrayDatos);
+           return response()->view("vista_pacientes.resultadoBusquedaPaciente", $arrayDatos, 200);
 }
 
 

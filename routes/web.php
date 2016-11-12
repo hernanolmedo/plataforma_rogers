@@ -11,6 +11,7 @@
 |
 */
 
+
 /// URL::setRootControllerNamespace('App\Http\Controllers');
 
 Route::get('/', function () {
@@ -59,7 +60,7 @@ Route::get('crear_paciente', [
 ]);
 
 
-Route::post('crear_paciente','PacienteController@guardarPaciente');
+//Route::post('crear_paciente','PacienteController@vistaPaciente');
 //Route::Controller('testTerminado','ControllerTestoq');
 //Route::post('crear_paciente','PacienteController@buscarPaciente');   // probando rutear Buscador y ventana crear_paciente
 
@@ -70,7 +71,14 @@ Route::get('resultadoBusquedaPaciente', function () {
 //Route::get('prueba_admin', function () {
 //    return view('index2');
 
-
+Route::post('crear_paciente', function() { 
+    if(Request::get('login')) { 
+        $action = "btnIngresoPaciente"; 
+    } 
+    elseif(Request::get('search-btn')) { 
+        $action = "buscarPaciente"; 
+    } 
+    return App::make('App\Http\Controllers\PacienteController')->$action(); });
 
 
 
