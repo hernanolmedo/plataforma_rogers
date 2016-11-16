@@ -71,14 +71,19 @@ Route::get('resultadoBusquedaPaciente', function () {
 //Route::get('prueba_admin', function () {
 //    return view('index2');vvv
 
-Route::post('crear_paciente', function() { 
-    if(Request::get('login')) { 
-        $action = "btnIngresoPaciente"; 
-    } 
-    elseif(Request::get('search-btn')) { 
-        $action = "buscarPaciente"; 
-    } 
-    return App::make('App\Http\Controllers\PacienteController')->$action(); });
+Route::post('crear_paciente', [
+    'uses' => 'PacienteController@guardarPaciente',
+    'as' => 'GuardarPaciente'
+
+]);
+//Route::post('crear_paciente', function() { 
+ //   if(Request::get('login')) { 
+  //      $action = "btnIngresoPaciente"; 
+   // } 
+   // elseif(Request::get('search-btn')) { 
+    //    $action = "buscarPaciente"; 
+   // } 
+   // return App::make('App\Http\Controllers\PacienteController')->$action(); });
 
 
 

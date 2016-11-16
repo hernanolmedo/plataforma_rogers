@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Carrera_paciente;
 use Illuminate\Auth\Access\Response;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Redirector;
 use App\Paciente;
@@ -17,7 +18,15 @@ class ControllerTestoq extends Controller
 {
     public function view()
     {
-    	return view('formulario.test_oq');
+    	if (Auth::check()) {
+            $usuario = Auth::user();
+            if ($usuario->tipo_usuario == 'paciente' or $usuario->tipo_usuario == 'administrador')
+                return view('formulario.test_oq');
+            else
+                return dd("No posee los permisos para acceder al ingreso de un TESTOQ_45.2");
+        }
+        else
+            return  view('Auth.login');
     }
 
     /**

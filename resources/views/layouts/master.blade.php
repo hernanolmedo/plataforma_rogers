@@ -317,6 +317,10 @@
 <script src="plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
+<!-- Escript validar rut -->
+<script type="text/javascript" src="js/validarut.js"></script>
+<!-- Escript validar crearPaciente -->
+<script type="text/javascript" src="js/validaCrearPaciente.js"></script>
 
 <!-- CK Editor -->
 <script src="https://cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>

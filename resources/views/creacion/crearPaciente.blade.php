@@ -22,18 +22,18 @@
               <h3 class="box-title">Datos Personales</h3>
             </div>
             <div class="box-body">
-                <form role="form" method="post" id="form1" name="form1" onblur="javascript:return Rut(document.form1.rut.value)">
+                <form role="form" method="post" id="form1" name="form1" onSubmit="javascript:return validarForm1(event)">
                 {!! csrf_field() !!}
                 <div class="form-group">
                   <label>Nombre completo</label>
-                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150" required pattern="[A-Z]{0-150}"/>
+                  <input type="text" name="nombre" class="form-control" placeholder="Nombres y Apellidos" maxlength="150" required />
                 </div>
 
 
                 <div class="form-group">
 
                     <label>RUT</label>
-                  <input type="text" name="rut" id="rut" class="form-control" placeholder="Ejemplo: 14.113.678-9" maxlength="15" required pattern="[0-9]{8-9} [0-9][K]{1}">
+                  <input type="text" name="rut" id="rut" class="form-control" placeholder="Ejemplo: 14.113.678-9" maxlength="15" required>
       
 
                 </div>
@@ -50,8 +50,8 @@
                 
                 <div class="form-group">
                 <label>Sexo</label>
-                  <select class="form-control" name="sexo">
-                    <option value="sin-sexo" selected>Seleccione sexo</option>
+                  <select class="form-control" name="sexo" id="sexo">
+                    <option value="sin-sexo" selected disabled>Seleccione sexo</option>
                     <option value="F">Femenino</option>
                     <option value="M">Masculino</option>
                   </select>
@@ -62,7 +62,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" name="fono_casa" maxlength="10">
+                  <input type="text" class="form-control" name="fono_casa" id="fono_casa" maxlength="9" placeholder="Ejemplo: 227894561">
                 </div>
                 
                 <br>
@@ -72,7 +72,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" name="celular" maxlength="10" required>
+                  <input type="text" class="form-control" name="celular" id="celular" maxlength="9" required placeholder="Ejemplo: 97894563">
                 </div>
 
                 <br>
@@ -89,25 +89,39 @@
                   <div class="input-group-addon">
                     <i class="fa fa-phone"></i>
                   </div>
-                  <input type="text" class="form-control" name="fono_padre_tutor" maxlength="10">
+                  <input type="text" class="form-control" name="fono_padre_tutor" id="fono_padre_tutor" maxlength="9" placeholder="Ejemplo: 97894563">
                 </div>
 
                 <br>
 
                 <div class="form-group">
                 <label>Sistema Previsional</label>
-                  <select class="form-control" name="sistema_previsional">
-                    <option value="sin-sexo" selected>Seleccione Sistema Previsional</option>
+                  <select class="form-control" name="sistema_previsional" id="sistema_previsional" onchange="valida()">
+                    <option value="sin-prevision" selected disabled>Seleccione Sistema Previsional</option>
                     <option value="NINGUNO">Ninguno</option>
-                    <option value="FONASA">Fonasa</option>
+                    <option value="FONASA" >Fonasa</option>
                     <option value="ISAPRE">Isapre</option>
                   </select>
                 </div>
 
+                <script>
+                    function valida(){
+                    console.log("entra a funcion valida");
+                    if($('select[name=sistema_previsional]').val() == "FONASA" || $('select[name=sistema_previsional]').val() == "NINGUNO"){
+                      $("#isapre_cual").attr("disabled", true);
+                      console.log("entra a funcion valid");
+                    }
+                    else{
+                      $("#isapre_cual").attr("disabled", false);
+                    } 
+                    
+                  }
+                </script>
+
 <!--  SI EL CAMPO ISAPRE ES SELECCIONADO ACTIVAR EL TEXT CUAL (JAVASCRIPT)  -->
                 <div class="form-group">
                   <label>¿Cual?</label>
-                  <input type="text" name="isapre_cual" class="form-control" placeholder="Ejemplo: Consalud" maxlength="150">
+                  <input type="text" id="isapre_cual" name="isapre_cual" class="form-control" placeholder="Ejemplo: Consalud" maxlength="150" disabled required>
                 </div>
 
                 <div class="form-group">
@@ -314,8 +328,8 @@
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="js/facul_carrera.js"></script>
                   <label>Año de ingreso</label>
-                  <select class="form-control" id="year" name="ano_ingreso" selected>
-                    <option value="sin-ano_ingreso" selected>Seleccione su año de ingreso</option>
+                  <select class="form-control" id="year" name="ano_ingreso">
+                    <option value="sin-ano_ingreso" selected disabled>Seleccione su año de ingreso</option>
                     <script>
                       var myDate = new Date();
                       var year = myDate.getFullYear();
@@ -327,8 +341,8 @@
                     </select>
 
                   <label>Nivel académico</label>
-                  <select class="form-control"  name="nivel_carrera">
-                    <option value="sin_ano_ingreso" selected>Seleccione su nivel académico</option>
+                  <select class="form-control"  name="nivel_carrera" id="nivel_carrera">
+                    <option value="sin-nivel" selected disabled>Seleccione su nivel académico</option>
                     <script>
                       for(var i = 1; i < 15; i++){
                         document.write('<option value="'+i+'">'+i+'</option>');
@@ -337,15 +351,15 @@
                   </select>
 
                   <label>Jornada acedémica</label>
-                  <select class="form-control" name="jornada">
-                    <option value="sin_jornada" selected>Seleccione su jornada Académica</option>
+                  <select class="form-control" name="jornada" id="jornada">
+                    <option value="sin-jornada" selected disabled>Seleccione su jornada Académica</option>
                     <option value="D">Diurno</option>
                     <option value="V">Vespertino</option>
                   </select>
 
                   <label>¿Tiene su matrícula al día?</label>
-                  <select class="form-control" name="matricula_al_dia">
-                    <option value="sin_matricula" selected>¿matrícula al día?</option>
+                  <select class="form-control" name="matricula_al_dia" id="matricula_al_dia">
+                    <option value="sin-matricula" selected disabled>¿matrícula al día?</option>
                     <option value="T">SI</option>
                     <option value="F">NO</option>
                   </select>

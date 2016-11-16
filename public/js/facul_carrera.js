@@ -45,8 +45,8 @@ var FacultadesYcarreras = {
 jQuery(document).ready(function () {
 
     var iFacultad = 0;
-    var htmlFacultad = '<option value="sin-Facultad">Seleccione Facultad</option><option value="sin-facultad">--</option>';
-    var htmlCarrera = '<option value="sin-Facultad">Seleccione Facultad</option><option value="sin-facultad">--</option>';
+    var htmlFacultad = '<option value="sin-Facultad" selected disabled>Seleccione Facultad</option>';
+    var htmlCarrera = '<option value="sin-Facultad" selected disabled>Seleccione Carrera</option>';
 
     jQuery.each(FacultadesYcarreras.facultades, function () {
         htmlFacultad = htmlFacultad + '<option value="' + FacultadesYcarreras.facultades[iFacultad].facultad + '">' + FacultadesYcarreras.facultades[iFacultad].facultad + '</option>';
@@ -59,7 +59,7 @@ jQuery(document).ready(function () {
     jQuery('#facultades').change(function () {
         var iFacultades = 0;
         var valorRegion = jQuery(this).val();
-        var htmlComuna = '<option value="sin-carrera">Seleccione Carrera</option><option value="sin-carrera">--</option>';
+        var htmlComuna = '<option value="sin-carrera" selected disabled>Seleccione Carrera</option>';
         jQuery.each(FacultadesYcarreras.facultades, function () {
             if (FacultadesYcarreras.facultades[iFacultades].facultad == valorRegion) {
                 var  iCarreras = 0;

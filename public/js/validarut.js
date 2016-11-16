@@ -132,6 +132,5 @@ function Rut(texto)
 
     if ( revisarDigito2(texto) )
         return true;
-
     return false;
 }

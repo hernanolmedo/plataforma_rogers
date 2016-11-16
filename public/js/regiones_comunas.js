@@ -66,8 +66,8 @@ var RegionesYcomunas = {
 jQuery(document).ready(function () {
 
 	var iRegion = 0;
-	var htmlRegion = '<option value="sin-region">Seleccione región</option><option value="sin-region">--</option>';
-	var htmlComunas = '<option value="sin-region">Seleccione comuna</option><option value="sin-region">--</option>';
+	var htmlRegion = '<option value="sin-region" disabled selected>Seleccione región</option>';
+	var htmlComunas = '<option value="sin-region" disabled selected>Seleccione comuna</option>';
 
 	jQuery.each(RegionesYcomunas.regiones, function () {
 		htmlRegion = htmlRegion + '<option value="' + RegionesYcomunas.regiones[iRegion].NombreRegion + '">' + RegionesYcomunas.regiones[iRegion].NombreRegion + '</option>';
@@ -80,7 +80,7 @@ jQuery(document).ready(function () {
 	jQuery('#regiones').change(function () {
 		var iRegiones = 0;
 		var valorRegion = jQuery(this).val();
-		var htmlComuna = '<option value="sin-comuna">Seleccione comuna</option><option value="sin-comuna">--</option>';
+		var htmlComuna = '<option value="sin-comuna" disabled selected>Seleccione comuna</option>';
 		jQuery.each(RegionesYcomunas.regiones, function () {
 			if (RegionesYcomunas.regiones[iRegiones].NombreRegion == valorRegion) {
 				var iComunas = 0;

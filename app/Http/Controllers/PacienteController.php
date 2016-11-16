@@ -8,14 +8,22 @@ use App\Http\Requests;
 use App\Carrera_paciente;
 use Illuminate\Routing\Controller;
 use Illuminate\Auth\Access\Response;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Redirector;
 use App\Paciente;
 use App\Testoq;
 class PacienteController extends Controller
 {
     public function viewCrearPaciente(){
-        return view('creacion.crearPaciente');
+        if (Auth::check()) {
+            $usuario = Auth::user();
+            if ($usuario->tipo_usuario == 'paciente' or $usuario->tipo_usuario == 'administrador')
+                return view('creacion.crearPaciente');
+            else
+                return dd("No posee los permisos para ingresar un paciente");
+        }
+        else
+            return  view('Auth.login');
     }
 
  /*  public function vistaPaciente(Request $request){
