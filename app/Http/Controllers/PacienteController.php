@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Redirector;
 use App\Paciente;
 use App\Testoq;
+use Validator;
 class PacienteController extends Controller
 {
     public function viewCrearPaciente(){
@@ -40,7 +41,7 @@ class PacienteController extends Controller
 
 
 
-    public function guardarPaciente(Request $request){
+    public function guardarPaciente(Request $request){       
         $carrera_paciente = new Carrera_paciente;
         $paciente = new Paciente;
         try {

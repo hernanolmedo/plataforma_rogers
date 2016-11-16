@@ -54,7 +54,8 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js"></script>
-
+<!-- Validador de rut -->
+<script type="text/javascript" src="js/validarut.js"></script>
 <script>
   $(function () {
     $('input').iCheck({

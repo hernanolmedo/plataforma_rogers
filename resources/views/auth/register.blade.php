@@ -2,7 +2,7 @@
 @section('titulo') Rogers | Registro @endsection
 @section('body')
 <p class="login-box-msg">Crear usuario nuevo</p>
-<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}" name="form1" id="form1" onSubmit="javascript:return Rut(document.form1.rut.value)">
     {{ csrf_field() }}
     <div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
             <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre de usuario" required autofocus>
