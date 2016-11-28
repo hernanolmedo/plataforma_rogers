@@ -11,3 +11,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+
+// AQUI JENNI PROBANDO 1 2 3 1 23  D:   123123

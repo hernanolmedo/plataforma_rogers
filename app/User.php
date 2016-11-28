@@ -8,22 +8,32 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
     /**
      * The attributes that are mass assignable.
-     *
      * @var array
      */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    protected $fillable = ['name', 'email', 'password', 'tipo_usuario', 'rut'];
 
     /**
      * The attributes that should be hidden for arrays.
-     *
      * @var array
      */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    protected $hidden = ['password', 'remember_token'];
+
+    // Un usuario tiene muchas epicrisis
+    public function epicrisis(){
+        return $this->hasMany('App\Epicrisis');
+    }
+
+    public function pauta_eval(){
+        return $this->hasMany('App\Pauta_eval');
+    }
+
+     public function ficha_ingreso(){
+        return $this->hasMany('App\Ficha_ingreso');
+    }
+
+     public function sesion(){
+        return $this->hasMany('App\Sesion');
+    }
 }

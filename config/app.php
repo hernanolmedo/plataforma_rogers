@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -118,12 +118,11 @@ return [
     |
     | Available Settings: "single", "daily", "syslog", "errorlog"
     |
-    */
-
+    */ 
     'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
-
+    'Input' => Illuminate\Support\Facades\Input::class,
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
