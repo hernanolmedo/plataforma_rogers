@@ -31,11 +31,10 @@
               <form method="post">
                 {!! csrf_field() !!}
                 <!-- <input type="hidden" name="_token" value="toJrgaGwilNBae71riv71TZO0hoE8k8XTVwF41J5"> -->
-                       
                 <div class="form-group">
                 <label>Tipo Cierre</label>
                   <select required="required" class="form-control" name="tipo_cierre" id="tipo_cierre" onchange="valida()">
-                    <option value="sin_tipo_cierre" selected disabled>Seleccione Tipo de Cierre</option>
+                    <option value="">Seleccione Tipo de Cierre</option>
                     <option value="mutuo">Mutuo</option>
                     <option value="terapeuta">Del terapeuta</option>
                     <option value="paciente">Del paciente</option>
@@ -47,7 +46,7 @@
                 <script>
                     function valida(){
                     console.log("entra a funcion valida");
-                    if($('select[name=tipo_cierre]').val() == "mutuo" || $('select[name=tipo_cierre]').val() == "terapeuta" || $('select[name=tipo_cierre]').val() == "paciente" || $('select[name=tipo_cierre]').val() == "desercion"){
+                    if($('select[name=tipo_cierre]').val() == "" || $('select[name=tipo_cierre]').val() == "mutuo" || $('select[name=tipo_cierre]').val() == "terapeuta" || $('select[name=tipo_cierre]').val() == "paciente" || $('select[name=tipo_cierre]').val() == "desercion"){
                       $("#otro").attr("disabled", true);
                       console.log("entra a funcion valida");
                     }
